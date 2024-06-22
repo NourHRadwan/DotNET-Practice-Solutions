@@ -143,6 +143,7 @@
             /// representation of a value to it's corresponding data types
             /// return a bool value indicating success or failure
             /// and the converted value if successful
+            /// bool TryParse(string input, out dataType result);
 
             //string x = "10";
             //string z = "Ahmed";
@@ -156,7 +157,36 @@
             //flag = int.TryParse(z, out y);
             //Console.WriteLine(flag); //False
             //Console.WriteLine(y); // 0 --> The default value of int
+
+            #endregion
+
+            #region Operators Priority [Precedence] and Asscoitivity
+            /// 1. Unary Operators (Prefix)
+            /// 2. Round Braces ()
+            /// 3. * / %
+            /// 4. + -
+
+            //int Equation = 4 + 3 * 8;
+            //Console.WriteLine(Equation);
+
+            int a = 20;
+            int b = 10;
+            int c = 15;
+            int d = 5;
+            int e;
+
+            e = (a + b) * c / d;
+            Console.WriteLine(e); // (30 * 15) / 5 
+
+            e = ((a + b) * c / d); // (30 * 15) / 5
+            Console.WriteLine(e);
             
+            e = (a + b) * (c / d);
+            Console.WriteLine(e);
+
+            e = a + (b * c / d);
+            Console.WriteLine(e);
+
             #endregion
         }
     }

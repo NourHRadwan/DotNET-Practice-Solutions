@@ -380,20 +380,47 @@ namespace Day_02
 
             #region StringBuilder Methods
             /// Append
-            /// 
-            StringBuilder Massege = new StringBuilder("Hello");
-            Massege.Append(" to");
-            Console.WriteLine($"Massege is {Massege}");
+            /// after the Append, the cursor will not move to the next line
+            ///StringBuilder Massege = new StringBuilder("Hello");
+            ///Massege.Append(" to");
+            ///Console.WriteLine($"Massege is {Massege}");
 
             ///AppendLine
-            ///
-            Massege.AppendLine(" Nour");
-            Console.WriteLine($"Massege is {Massege}");
+            /// After the AppendLine, the cursor will move to the next line
+            ///Massege.AppendLine(" Nour");
+            ///Console.WriteLine($"Massege is {Massege}");
 
+            ///Remove
+            /// Remove a specified substring from the StringBuilder
+            /// 
+            ///Massege.Remove(0, 5);
+            ///Console.WriteLine($"Massege is {Massege}");
 
+            ///Insert
+            /// Insert a specified substring at a specified index
+            ///Massege.Insert(0, "Hi");
+            ///Console.WriteLine($"Massege is {Massege}");
+
+            ///AppendFormat
+            /// Append a formatted string to the StringBuilder
+            ///int Age = 30;
+            ///Massege.AppendFormat(" My Age is {0} \n", Age);
+
+            ///AppendJoin
+            /// Append a set of strings to the StringBuilder
+            
+            ///Massege.AppendJoin(" ", "I", "Love", "You"); // I Love You
+            ///Console.WriteLine($"Massege is {Massege}");
+
+            ///Interview Question:
+            ///When to use String and when to use StringBuilder
+            /// Use String when you are sure that the value of the string will not be changed
+           
             #endregion
 
             #endregion
+
+
 
             #endregion
         }

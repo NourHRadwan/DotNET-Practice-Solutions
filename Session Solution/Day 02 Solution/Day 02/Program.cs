@@ -305,10 +305,10 @@
             #region EX 1:
             string Name2 = "Ahmed";
             string Name3 = "Omar";
-            
+
             Console.WriteLine($"Name 2 is {Name2}");
             Console.WriteLine($"Name 2 HashCode  is {Name2.GetHashCode()}"); // Same HashCode as Name3
-            
+
             Console.WriteLine($"Name 3 is {Name3}");
             Console.WriteLine($"Name 3 HashCode  is {Name3.GetHashCode()}"); // Same HashCode as Name2
 
@@ -318,10 +318,10 @@
             /// "Omar" is refered by two references Name2 and Name3
 
             Console.WriteLine($"Name 2 is {Name2}");
-            Console.WriteLine($"Name 2 HashCode  is {Name2.GetHashCode()}"); 
+            Console.WriteLine($"Name 2 HashCode  is {Name2.GetHashCode()}");
 
             Console.WriteLine($"Name 3 is {Name3}");
-            Console.WriteLine($"Name 3 HashCode  is {Name3.GetHashCode()}"); 
+            Console.WriteLine($"Name 3 HashCode  is {Name3.GetHashCode()}");
 
             Name3 = "Ali";
             /// Name2 refer to "Omar" and Name3 refer to "Ali"
@@ -330,10 +330,10 @@
             /// beacuse string is immutable, the value of the object in the HEAP can't be changed
             /// 
             Console.WriteLine($"Name 2 is {Name2}");
-            Console.WriteLine($"Name 2 HashCode  is {Name2.GetHashCode()}"); 
+            Console.WriteLine($"Name 2 HashCode  is {Name2.GetHashCode()}");
 
             Console.WriteLine($"Name 3 is {Name3}");
-            Console.WriteLine($"Name 3 HashCode  is {Name3.GetHashCode()}"); 
+            Console.WriteLine($"Name 3 HashCode  is {Name3.GetHashCode()}");
 
 
             #endregion
@@ -341,6 +341,9 @@
 
             #endregion
 
+            #region String Builder
+
+            #endregion
 
             #endregion
         }

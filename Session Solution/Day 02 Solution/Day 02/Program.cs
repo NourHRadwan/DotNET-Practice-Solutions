@@ -305,37 +305,37 @@ namespace Day_02
             /// because Ldstr IL instruction is used to load the string from the string pool
 
             #region EX 1:
-            string Name2 = "Ahmed";
-            string Name3 = "Omar";
-
-            Console.WriteLine($"Name 2 is {Name2}");
-            Console.WriteLine($"Name 2 HashCode  is {Name2.GetHashCode()}"); // Same HashCode as Name3
-
-            Console.WriteLine($"Name 3 is {Name3}");
-            Console.WriteLine($"Name 3 HashCode  is {Name3.GetHashCode()}"); // Same HashCode as Name2
-
-            Name2 = Name3; // Name2 refer to "Omar" and Name3 refer to "Omar"
+            ///string Name2 = "Ahmed";
+            ///string Name3 = "Omar";
+            ///
+            ///Console.WriteLine($"Name 2 is {Name2}");
+            ///Console.WriteLine($"Name 2 HashCode  is {Name2.GetHashCode()}"); // Same HashCode as Name3
+            ///
+            ///Console.WriteLine($"Name 3 is {Name3}");
+            ///Console.WriteLine($"Name 3 HashCode  is {Name3.GetHashCode()}"); // Same HashCode as Name2
+            ///
+            ///Name2 = Name3; // Name2 refer to "Omar" and Name3 refer to "Omar"
             /// "Ahmed" is not refered by any reference, it will be collected by the GC
             /// "Ahmed" is now unreachable object beacuse no reference is refering to it
             /// "Omar" is refered by two references Name2 and Name3
 
-            Console.WriteLine($"Name 2 is {Name2}");
-            Console.WriteLine($"Name 2 HashCode  is {Name2.GetHashCode()}");
-
-            Console.WriteLine($"Name 3 is {Name3}");
-            Console.WriteLine($"Name 3 HashCode  is {Name3.GetHashCode()}");
-
-            Name3 = "Ali";
+            ///Console.WriteLine($"Name 2 is {Name2}");
+            ///Console.WriteLine($"Name 2 HashCode  is {Name2.GetHashCode()}");
+            ///
+            ///Console.WriteLine($"Name 3 is {Name3}");
+            ///Console.WriteLine($"Name 3 HashCode  is {Name3.GetHashCode()}");
+            ///
+            ///Name3 = "Ali";
             /// Name2 refer to "Omar" and Name3 refer to "Ali"
             /// Name3 created a new object in the HEAP with the value "Ali"
             /// "Omar" is not refered by any reference, it will be collected by the GC
             /// beacuse string is immutable, the value of the object in the HEAP can't be changed
             /// 
-            Console.WriteLine($"Name 2 is {Name2}");
-            Console.WriteLine($"Name 2 HashCode  is {Name2.GetHashCode()}");
-
-            Console.WriteLine($"Name 3 is {Name3}");
-            Console.WriteLine($"Name 3 HashCode  is {Name3.GetHashCode()}");
+            ///Console.WriteLine($"Name 2 is {Name2}");
+            ///Console.WriteLine($"Name 2 HashCode  is {Name2.GetHashCode()}");
+            ///
+            ///Console.WriteLine($"Name 3 is {Name3}");
+            ///Console.WriteLine($"Name 3 HashCode  is {Name3.GetHashCode()}");
 
 
             #endregion
@@ -349,18 +349,49 @@ namespace Day_02
             /// Internally is A LinkedList of Chars
             /// 
 
-            StringBuilder Massege;
+            ///StringBuilder Massege;
             /// Declare a reference of type string, refering to NULL
             /// CLR will alocate 4 Bytes for the reference at STACK
             /// CLR will alocate 0 Bytes at the HEAP
 
-            Massege = new StringBuilder("Hello");
+            ///Massege = new StringBuilder("Hello");
             /// CLR will allocate 10 Bytes at the HEAP (5 char * 2 Bytes)
             /// initialize the allocated Bytes with the default value of char datatype ' '
             /// call the user-defined constructor --> ("Hello") To initialize the allocated Bytes with the value of the string
             /// Assign reference to alocated Object to the reference 'Massege'
             /// No syntax Sugar for String Builder
 
+            ///Console.WriteLine($"Massege is {Massege}");
+            ///Console.WriteLine($"Massage Hash code is {Massege.GetHashCode()}");
+            ///Massage Hash code is 43942917
+
+
+            // Append
+            ///Massege.Append(" Nour");
+            ///Console.WriteLine($"Massege is {Massege}");
+            ///Console.WriteLine($"Massage Hash code is {Massege.GetHashCode()}");
+            ///Massage Hash code is 43942917
+
+            /// The same Hash code means the same object
+            /// in StringBuilder you can modify the object size because it is a LinkedList
+            /// in StringBuilder you can modify the object value
+            /// Stringbuilder is class representing a mutable string of characters
+            /// StringBuilder is internally a LinkedList of blocks each of which hold a chuck of the string
+
+            #region StringBuilder Methods
+            /// Append
+            /// 
+            StringBuilder Massege = new StringBuilder("Hello");
+            Massege.Append(" to");
+            Console.WriteLine($"Massege is {Massege}");
+
+            ///AppendLine
+            ///
+            Massege.AppendLine(" Nour");
+            Console.WriteLine($"Massege is {Massege}");
+
+
+            #endregion
 
             #endregion
 

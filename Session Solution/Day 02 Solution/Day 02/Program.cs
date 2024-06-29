@@ -194,12 +194,16 @@
 
             #region For / Foreach
 
-            int [] Numbers = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            //int [] Numbers = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 
             /// For
             ///better for preformance than foreach
             /// it is used when we need to access the index of the element
             /// any change to the element will affect the original collection
+            /// in For you can access the index of the element
+            /// in For you can change the element value
+            /// in For you can access the element by index
+            /// in For you can control the execution of the loop by continue or break
 
             ///for(int i =0; i <Numbers.Length; i++)
             ///{
@@ -213,12 +217,13 @@
             ///the scope of this variable is the loop only
             ///any change to this variable will not affect the original collection
             ///it is called for each iteration variable
+            ///less preformance as it create a copy of the element in each iteration
             
-
-            foreach (int number in Numbers)
-            { 
-                            Console.WriteLine(number);
-            }
+            ///foreach (int number in Numbers)
+            ///{ 
+            ///                Console.WriteLine(number);
+            ///}
+            
             #endregion
 
             #endregion

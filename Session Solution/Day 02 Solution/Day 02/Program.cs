@@ -251,23 +251,97 @@
             #endregion
 
             #region While
-            int x = 2;
-            bool flag = true;
-            while (x % 2 == 0 || !flag)
-            {
-                Console.WriteLine("Sorry your Number is even, Enter an odd Number: ");
-                flag = int.TryParse(Console.ReadLine(), out x);
-                // 10 --> Try Parse = True --> x =10
-
-                // 5 --> Try Parse = False --> x = 5
-
-                // "Ahmed" --> Try Parse = False --> x = 0
-            }
-
+            ///int x = 2;
+            ///bool flag = true;
+            ///while (x % 2 == 0 || !flag)
+            ///{
+            ///    Console.WriteLine("Sorry your Number is even, Enter an odd Number: ");
+            ///    flag = int.TryParse(Console.ReadLine(), out x);
+            ///    // 10 --> Try Parse = True --> x =10
+            ///
+            ///    // 5 --> Try Parse = False --> x = 5
+            ///
+            ///    // "Ahmed" --> Try Parse = False --> x = 0
+            ///}
+            ///
             #endregion
 
             #endregion
             #endregion
+            #endregion
+
+            #region String vs String Builder
+
+            #region String
+            /// String is a reference type, Works as Value Type
+            /// String is immutable Datatype [Value can't be changed]
+            /// String internally is an array of char
+            /// Nour -> N O U R
+            ///
+            ///string Name;
+            /// Declare a reference of type string, refering to NULL
+            /// CLR will alocate 4 Bytes for the reference at STACK
+            /// CLR will alocate 0 Bytes at the HEAP
+            ///
+            ///Name = new string("Ahmed");
+            /// CLR will allocate 10 Bytes at the HEAP (5 char * 2 Bytes)
+            /// initialize the allocated Bytes with the default value of char datatype ' '
+            /// call the user-defined constructor --> ("Ahmed") To initialize the allocated Bytes with the value of the string
+            /// Assign reference to alocated Object to the reference 'Name'
+            ///  Name = "Ahmed" --> is Syntax Sugar for Name = new string("Ahmed")
+            ///
+            ///string Name2 = "Ahmed";
+            ///string Name3 = "Ahmed";
+            ///
+            ///Console.WriteLine($"Name 2 is {Name2}");
+            ///Console.WriteLine($"Name 2 HashCode  is {Name2.GetHashCode()}"); // Same HashCode as Name3
+            ///
+            ///Console.WriteLine($"Name 3 is {Name3}");
+            ///Console.WriteLine($"Name 3 HashCode  is {Name3.GetHashCode()}"); // Same HashCode as Name2
+            ///
+            /// Name2 and Name3 are refering to the same object in the HEAP
+            /// because Ldstr IL instruction is used to load the string from the string pool
+
+            #region EX 1:
+            string Name2 = "Ahmed";
+            string Name3 = "Omar";
+            
+            Console.WriteLine($"Name 2 is {Name2}");
+            Console.WriteLine($"Name 2 HashCode  is {Name2.GetHashCode()}"); // Same HashCode as Name3
+            
+            Console.WriteLine($"Name 3 is {Name3}");
+            Console.WriteLine($"Name 3 HashCode  is {Name3.GetHashCode()}"); // Same HashCode as Name2
+
+            Name2 = Name3; // Name2 refer to "Omar" and Name3 refer to "Omar"
+            /// "Ahmed" is not refered by any reference, it will be collected by the GC
+            /// "Ahmed" is now unreachable object beacuse no reference is refering to it
+            /// "Omar" is refered by two references Name2 and Name3
+
+            Console.WriteLine($"Name 2 is {Name2}");
+            Console.WriteLine($"Name 2 HashCode  is {Name2.GetHashCode()}"); 
+
+            Console.WriteLine($"Name 3 is {Name3}");
+            Console.WriteLine($"Name 3 HashCode  is {Name3.GetHashCode()}"); 
+
+            Name3 = "Ali";
+            /// Name2 refer to "Omar" and Name3 refer to "Ali"
+            /// Name3 created a new object in the HEAP with the value "Ali"
+            /// "Omar" is not refered by any reference, it will be collected by the GC
+            /// beacuse string is immutable, the value of the object in the HEAP can't be changed
+            /// 
+            Console.WriteLine($"Name 2 is {Name2}");
+            Console.WriteLine($"Name 2 HashCode  is {Name2.GetHashCode()}"); 
+
+            Console.WriteLine($"Name 3 is {Name3}");
+            Console.WriteLine($"Name 3 HashCode  is {Name3.GetHashCode()}"); 
+
+
+            #endregion
+
+
+            #endregion
+
+
             #endregion
         }
     }

@@ -218,14 +218,35 @@
             ///any change to this variable will not affect the original collection
             ///it is called for each iteration variable
             ///less preformance as it create a copy of the element in each iteration
-            
+
             ///foreach (int number in Numbers)
             ///{ 
             ///                Console.WriteLine(number);
             ///}
-            
+
             #endregion
 
+            #region While - DoWhile
+
+
+            // Do While
+            int Number;
+            bool flag;
+            do
+            {
+                Console.WriteLine("Enter an Even number: ");
+                //Number = int.Parse(Console.ReadLine());   --> Exception if the user enter a non-integer value
+                flag = int.TryParse(Console.ReadLine(), out Number); // --> TryParse return a bool value indicating success or failure
+                // 10 => True --> Number = 10
+                // "Ahmed" => False --> Number = 0
+            }
+            while (Number % 2 == 1 || !flag);
+            // The operator || is short circuit if the first condition is true, the second condition will not be evaluated
+            // only if the user enter a non-integer value, the second condition will be evaluated
+            // if the user enter an odd number, the second condition will not be evaluated
+            Console.WriteLine($"{Number} Is an Even Number");
+
+            #endregion
             #endregion
             #endregion
         }

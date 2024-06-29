@@ -6,13 +6,13 @@
         static void Main(string[] args)
         {
             #region Reference Type
-            Point P1;
+            //Point P1;
             /// declare for reference of type "Point", Refering to NULL
             /// This reference can refer to an object from type "Point" or another type "inherting from Point" 
             /// CLR will alocate 4 Bytes for the reference at STACK
             /// CLR will alocate 0 Bytes at the HEAP
 
-            P1 = new Point();
+            //P1 = new Point();
             /// new: 
             ///1. Allocate Required Number of Bytes in HEAP (Object Size + CLR Overhead Variables) 
             ///2. Initalize allocated Bytes with Default Values of Its DataType
@@ -229,22 +229,42 @@
             #region While - DoWhile
 
 
+            #region Do While
             // Do While
-            int Number;
-            bool flag;
-            do
+            ///int Number;
+            ///bool flag;
+            ///do
+            ///{
+            ///    Console.WriteLine("Enter an Even number: ");
+            ///    //Number = int.Parse(Console.ReadLine());   --> Exception if the user enter a non-integer value
+            ///    flag = int.TryParse(Console.ReadLine(), out Number); // --> TryParse return a bool value indicating success or failure
+            ///    // 10 => True --> Number = 10
+            ///    // "Ahmed" => False --> Number = 0
+            ///}
+            ///while (Number % 2 == 1 || !flag);
+            ///// The operator || is short circuit if the first condition is true, the second condition will not be evaluated
+            ///// only if the user enter a non-integer value, the second condition will be evaluated
+            ///// if the user enter an odd number, the second condition will not be evaluated
+            ///Console.WriteLine($"{Number} Is an Even Number");
+
+
+            #endregion
+
+            #region While
+            int x = 2;
+            bool flag = true;
+            while (x % 2 == 0 || !flag)
             {
-                Console.WriteLine("Enter an Even number: ");
-                //Number = int.Parse(Console.ReadLine());   --> Exception if the user enter a non-integer value
-                flag = int.TryParse(Console.ReadLine(), out Number); // --> TryParse return a bool value indicating success or failure
-                // 10 => True --> Number = 10
-                // "Ahmed" => False --> Number = 0
+                Console.WriteLine("Sorry your Number is even, Enter an odd Number: ");
+                flag = int.TryParse(Console.ReadLine(), out x);
+                // 10 --> Try Parse = True --> x =10
+
+                // 5 --> Try Parse = False --> x = 5
+
+                // "Ahmed" --> Try Parse = False --> x = 0
             }
-            while (Number % 2 == 1 || !flag);
-            // The operator || is short circuit if the first condition is true, the second condition will not be evaluated
-            // only if the user enter a non-integer value, the second condition will be evaluated
-            // if the user enter an odd number, the second condition will not be evaluated
-            Console.WriteLine($"{Number} Is an Even Number");
+
+            #endregion
 
             #endregion
             #endregion

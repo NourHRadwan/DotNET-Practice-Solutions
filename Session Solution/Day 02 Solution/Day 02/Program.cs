@@ -169,24 +169,59 @@
             //int Equation = 4 + 3 * 8;
             //Console.WriteLine(Equation);
 
-            int a = 20;
-            int b = 10;
-            int c = 15;
-            int d = 5;
-            int e;
+            ///int a = 20;
+            ///int b = 10;
+            ///int c = 15;
+            ///int d = 5;
+            ///int e;
+            ///
+            ///e = (a + b) * c / d;
+            ///Console.WriteLine(e); // (30 * 15) / 5 
+            ///
+            ///e = ((a + b) * c / d); // (30 * 15) / 5
+            ///Console.WriteLine(e);
+            ///
+            ///e = (a + b) * (c / d);
+            ///Console.WriteLine(e);
+            ///
+            ///e = a + (b * c / d);
+            ///Console.WriteLine(e);
+            ///
+            #endregion
 
-            e = (a + b) * c / d;
-            Console.WriteLine(e); // (30 * 15) / 5 
+            #region Control Statments
+            #region Looping
 
-            e = ((a + b) * c / d); // (30 * 15) / 5
-            Console.WriteLine(e);
+            #region For / Foreach
+
+            int [] Numbers = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+
+            /// For
+            ///better for preformance than foreach
+            /// it is used when we need to access the index of the element
+            /// any change to the element will affect the original collection
+
+            ///for(int i =0; i <Numbers.Length; i++)
+            ///{
+            ///   Console.WriteLine(Numbers[i]);
+            ///}
+
+            /// Foreach
+            ///Datatypes must be Class that inhert from Interface IEnumerable
+            ///for each element in the collection, the compiler will create a new variable to store the element
+            ///this variable is read-only
+            ///the scope of this variable is the loop only
+            ///any change to this variable will not affect the original collection
+            ///it is called for each iteration variable
             
-            e = (a + b) * (c / d);
-            Console.WriteLine(e);
 
-            e = a + (b * c / d);
-            Console.WriteLine(e);
+            foreach (int number in Numbers)
+            { 
+                            Console.WriteLine(number);
+            }
+            #endregion
 
+            #endregion
             #endregion
         }
     }

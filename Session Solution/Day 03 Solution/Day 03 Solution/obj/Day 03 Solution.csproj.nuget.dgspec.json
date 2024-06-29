@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nourh\\Desktop\\ASP.Net Diploma\\C#\\GitHub Repo\\NourHRadwan\\C-Practice-Solutions\\Session Solution\\Day 02 Solution\\Day 02\\Day 02.csproj": {}
+    "C:\\Users\\nourh\\Desktop\\ASP.Net Diploma\\C#\\GitHub Repo\\NourHRadwan\\C-Practice-Solutions\\Session Solution\\Day 03 Solution\\Day 03 Solution\\Day 03 Solution.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nourh\\Desktop\\ASP.Net Diploma\\C#\\GitHub Repo\\NourHRadwan\\C-Practice-Solutions\\Session Solution\\Day 02 Solution\\Day 02\\Day 02.csproj": {
+    "C:\\Users\\nourh\\Desktop\\ASP.Net Diploma\\C#\\GitHub Repo\\NourHRadwan\\C-Practice-Solutions\\Session Solution\\Day 03 Solution\\Day 03 Solution\\Day 03 Solution.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nourh\\Desktop\\ASP.Net Diploma\\C#\\GitHub Repo\\NourHRadwan\\C-Practice-Solutions\\Session Solution\\Day 02 Solution\\Day 02\\Day 02.csproj",
-        "projectName": "Day 02",
-        "projectPath": "C:\\Users\\nourh\\Desktop\\ASP.Net Diploma\\C#\\GitHub Repo\\NourHRadwan\\C-Practice-Solutions\\Session Solution\\Day 02 Solution\\Day 02\\Day 02.csproj",
+        "projectUniqueName": "C:\\Users\\nourh\\Desktop\\ASP.Net Diploma\\C#\\GitHub Repo\\NourHRadwan\\C-Practice-Solutions\\Session Solution\\Day 03 Solution\\Day 03 Solution\\Day 03 Solution.csproj",
+        "projectName": "Day 03 Solution",
+        "projectPath": "C:\\Users\\nourh\\Desktop\\ASP.Net Diploma\\C#\\GitHub Repo\\NourHRadwan\\C-Practice-Solutions\\Session Solution\\Day 03 Solution\\Day 03 Solution\\Day 03 Solution.csproj",
         "packagesPath": "C:\\Users\\nourh\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nourh\\Desktop\\ASP.Net Diploma\\C#\\GitHub Repo\\NourHRadwan\\C-Practice-Solutions\\Session Solution\\Day 02 Solution\\Day 02\\obj\\",
+        "outputPath": "C:\\Users\\nourh\\Desktop\\ASP.Net Diploma\\C#\\GitHub Repo\\NourHRadwan\\C-Practice-Solutions\\Session Solution\\Day 03 Solution\\Day 03 Solution\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -65,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

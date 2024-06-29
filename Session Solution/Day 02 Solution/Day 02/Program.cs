@@ -1,4 +1,6 @@
-﻿namespace Day_02
+﻿using System.Text;
+
+namespace Day_02
 {
     internal class Program
     {
@@ -342,6 +344,23 @@
             #endregion
 
             #region String Builder
+            /// String Builder is a reference Type
+            /// Is Mutable Datatype [Value Can be Changed]
+            /// Internally is A LinkedList of Chars
+            /// 
+
+            StringBuilder Massege;
+            /// Declare a reference of type string, refering to NULL
+            /// CLR will alocate 4 Bytes for the reference at STACK
+            /// CLR will alocate 0 Bytes at the HEAP
+
+            Massege = new StringBuilder("Hello");
+            /// CLR will allocate 10 Bytes at the HEAP (5 char * 2 Bytes)
+            /// initialize the allocated Bytes with the default value of char datatype ' '
+            /// call the user-defined constructor --> ("Hello") To initialize the allocated Bytes with the value of the string
+            /// Assign reference to alocated Object to the reference 'Massege'
+            /// No syntax Sugar for String Builder
+
 
             #endregion
 

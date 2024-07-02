@@ -2,7 +2,23 @@
 
 namespace Day_02
 {
-    internal class Program
+    ///static void PrintShapes()
+///{
+///    for (int i = 1; i <= 10; i++)
+///    {
+///        Console.WriteLine($"*_*");
+///    }
+///}
+
+static void PrintShapes(int count = 5, string Pattern = "$_$")
+    // Default values for the parameters
+{
+    for(int i = 1; i<= count;i++)
+    {
+        Console.WriteLine($"{Pattern}");
+    }
+}
+   internal class Program
     {
         // Entry Point of the Program
         static void Main(string[] args)
@@ -602,7 +618,7 @@ namespace Day_02
 
             //Basic Methods
 
-
+        Console.WriteLine("Hi")
 
 
 
@@ -614,6 +630,42 @@ namespace Day_02
             #endregion
 
             #endregion
+
+            
+            #region Part 1: Class Functions
+            //calling the function
+
+            #region EX1:
+            //PrintShapes();
+
+            // no need for Program.PrintShapes() because it is in the same class as Main
+            // Class functions are called by their name and the class name
+
+            #endregion
+
+            #region EX2:
+            // Function with arguments
+            PrintShapes(15, "@_@");
+            // Passing the parameters with the same order
+
+            PrintShapes(Pattern: "@_@", count : 15);
+            // Passing the parameters with the Name of the parameter
+            // another way to pass the parameters
+
+            PrintShapes(10);
+            // Using the default values of the parameter Pattern
+
+            PrintShapes(Pattern: "@_\t@");
+            // Using the default values of the parameter count
+
+            //\t is a tab character
+            //\n is a new line character
+            
+
+
+            #endregion
+            #endregion
+
         }
     }
 }

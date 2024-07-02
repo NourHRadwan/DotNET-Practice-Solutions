@@ -559,6 +559,61 @@ namespace Day_02
 
 
             #endregion
+
+            #region Array
+
+            #region 1D Array
+            // Decleration
+            int[] Numbers;
+            /// Array is a Built in Class Reference Type
+            /// Declare for Reference from Type Array of int
+            /// CLR will allocate 4 Bytes for the reference at the STACK
+            /// CLR will allocate 0 Bytes at the HEAP
+            /// Numbers is refering to default value of reference type NULL
+            /// Numbers can refer to an object from type Array of int or any type inherting from Array of int
+
+            // Initialization
+            Numbers = new int[3];
+            /// CLR will allocate 12 Bytes at the HEAP (3 * 4 Bytes)
+            /// initialize the allocated Bytes with the default value of int datatype 0
+
+            //Ways of Initialization
+            //1 
+            //int[] Numbers2 = new int[3];  // 0 0 0
+            //Numbers2 = { 1, 2, 3 }; // 1 2 3
+
+            //2
+            //int[] Numbers3 = new int[] { 1, 2, 3 }; // 1 2 3
+
+            //3 Syntax Sugar
+            //int[] Numbers4 = { 1, 2, 3 }; // 1 2 3
+            // But you cant use sugar like this
+            //int[] Numbers5;
+            //Numbers5 = { 1, 2, 3 }; // Error
+
+
+
+            #endregion
+
+            #region Rectangular Array
+            int[,] Marks = new int[3, 5];
+            /// CLR will allocate 60 Bytes at the HEAP (3 * 5 * 4 Bytes)
+            /// initialize the allocated Bytes with the default value of int datatype 0
+
+            //Basic Methods
+
+
+
+
+
+
+
+
+
+
+            #endregion
+
+            #endregion
         }
     }
 }

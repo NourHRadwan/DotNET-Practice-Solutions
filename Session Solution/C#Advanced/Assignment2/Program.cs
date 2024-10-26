@@ -4,8 +4,15 @@ internal class Program
     private static void Main(string[] args)
     {
         #region Q1
+        ///Scenario: You're developing a payment system for an online store.
+        ///You need to add multiple payment options, such as CreditCardPayment, BankTransfer, and PayPal. Each payment option should have its own way to process the payment.
+        ///Implement a system that allows users to choose one of these payment methods at checkout and process the payment accordingly.
+        ///Hint: Design your solution in such a way that adding new payment methods in the future would be easy and would not require modifying the existing code.
+        
             PaymentProcess paymentProcess = new PaymentProcess();
+        
             System.Console.WriteLine("How would like to pay [1]{CreditCardPayment} [2]{BankTransfer} [3]{Paypal}");
+        
             int choice;
             while(true)
                 {
@@ -31,7 +38,13 @@ internal class Program
         #endregion    
         
         #region Q2
+        ///Define an interface named IShape with a property Area and a method DisplayShapeInfo.
+        ///Create two interfaces, ICircle and IRectangle, that inherit from IShape. 
+        ///Implement these interfaces in classes Circle and Rectangle. 
+        ///Test your implementation by creating instances of both classes and displaying their shape information.
         
+        
+
         #endregion
     
     }

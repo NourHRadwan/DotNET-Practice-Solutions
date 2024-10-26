@@ -4,6 +4,6 @@ namespace Assignment2.Q2;
 
 public interface ICircle : IShape
 {
-    public decimal Radius {get; set;}
+    public double Radius {get; set;}
 
 }

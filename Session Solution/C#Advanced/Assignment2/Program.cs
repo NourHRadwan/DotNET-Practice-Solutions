@@ -1,4 +1,6 @@
-﻿namespace Assignment2.Q1;
+﻿using Assignment2.Q2;
+
+namespace Assignment2.Q1;
 internal class Program
 {
     private static void Main(string[] args)
@@ -43,7 +45,10 @@ internal class Program
         ///Implement these interfaces in classes Circle and Rectangle. 
         ///Test your implementation by creating instances of both classes and displaying their shape information.
         
-        
+        IShape Circle1 = new Circle(5);
+        Circle1.DisplayShapeInfo();
+        IShape Rectangle1 = new Rectangle(10,20);
+        Rectangle1.DisplayShapeInfo();
 
         #endregion
     

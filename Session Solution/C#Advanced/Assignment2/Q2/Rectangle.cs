@@ -4,12 +4,20 @@ namespace Assignment2.Q2;
 
 public class Rectangle : IRectangle
 {
-    public decimal Length { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-    public decimal Width { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-    public decimal Area { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+    public Rectangle(double length, double width)
+    {
+        Length = length;
+        Width = width;
+    }
 
+    public double Length { get; set; }
+    public double Width { get; set; }
+    public double Area { get 
+    {
+        return Length * Width;
+    }}
     public void DisplayShapeInfo()
     {
-        throw new NotImplementedException();
+        System.Console.WriteLine($"This rectangle has width {Width} and Length {Length} and Area of {Area}");
     }
 }

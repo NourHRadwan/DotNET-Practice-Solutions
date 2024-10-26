@@ -4,7 +4,7 @@ namespace Assignment2;
 
 public interface IShape
 {
-    public decimal Area{get; set;}
+    public double Area{get;}
 
     public void DisplayShapeInfo();
 

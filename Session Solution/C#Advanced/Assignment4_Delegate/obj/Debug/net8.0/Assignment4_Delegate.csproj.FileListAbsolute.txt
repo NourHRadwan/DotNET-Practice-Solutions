@@ -1,0 +1,15 @@
+/Users/NourH/Documents/ASP.netDiploma/GitHub Repo/DotNET-Practice-Solutions/Session Solution/C#Advanced/Assignment4_Delegate/bin/Debug/net8.0/Assignment4_Delegate
+/Users/NourH/Documents/ASP.netDiploma/GitHub Repo/DotNET-Practice-Solutions/Session Solution/C#Advanced/Assignment4_Delegate/bin/Debug/net8.0/Assignment4_Delegate.deps.json
+/Users/NourH/Documents/ASP.netDiploma/GitHub Repo/DotNET-Practice-Solutions/Session Solution/C#Advanced/Assignment4_Delegate/bin/Debug/net8.0/Assignment4_Delegate.runtimeconfig.json
+/Users/NourH/Documents/ASP.netDiploma/GitHub Repo/DotNET-Practice-Solutions/Session Solution/C#Advanced/Assignment4_Delegate/bin/Debug/net8.0/Assignment4_Delegate.dll
+/Users/NourH/Documents/ASP.netDiploma/GitHub Repo/DotNET-Practice-Solutions/Session Solution/C#Advanced/Assignment4_Delegate/bin/Debug/net8.0/Assignment4_Delegate.pdb
+/Users/NourH/Documents/ASP.netDiploma/GitHub Repo/DotNET-Practice-Solutions/Session Solution/C#Advanced/Assignment4_Delegate/obj/Debug/net8.0/Assignment4_Delegate.GeneratedMSBuildEditorConfig.editorconfig
+/Users/NourH/Documents/ASP.netDiploma/GitHub Repo/DotNET-Practice-Solutions/Session Solution/C#Advanced/Assignment4_Delegate/obj/Debug/net8.0/Assignment4_Delegate.AssemblyInfoInputs.cache
+/Users/NourH/Documents/ASP.netDiploma/GitHub Repo/DotNET-Practice-Solutions/Session Solution/C#Advanced/Assignment4_Delegate/obj/Debug/net8.0/Assignment4_Delegate.AssemblyInfo.cs
+/Users/NourH/Documents/ASP.netDiploma/GitHub Repo/DotNET-Practice-Solutions/Session Solution/C#Advanced/Assignment4_Delegate/obj/Debug/net8.0/Assignment4_Delegate.csproj.CoreCompileInputs.cache
+/Users/NourH/Documents/ASP.netDiploma/GitHub Repo/DotNET-Practice-Solutions/Session Solution/C#Advanced/Assignment4_Delegate/obj/Debug/net8.0/Assignment4_Delegate.sourcelink.json
+/Users/NourH/Documents/ASP.netDiploma/GitHub Repo/DotNET-Practice-Solutions/Session Solution/C#Advanced/Assignment4_Delegate/obj/Debug/net8.0/Assignment4_Delegate.dll
+/Users/NourH/Documents/ASP.netDiploma/GitHub Repo/DotNET-Practice-Solutions/Session Solution/C#Advanced/Assignment4_Delegate/obj/Debug/net8.0/refint/Assignment4_Delegate.dll
+/Users/NourH/Documents/ASP.netDiploma/GitHub Repo/DotNET-Practice-Solutions/Session Solution/C#Advanced/Assignment4_Delegate/obj/Debug/net8.0/Assignment4_Delegate.pdb
+/Users/NourH/Documents/ASP.netDiploma/GitHub Repo/DotNET-Practice-Solutions/Session Solution/C#Advanced/Assignment4_Delegate/obj/Debug/net8.0/Assignment4_Delegate.genruntimeconfig.cache
+/Users/NourH/Documents/ASP.netDiploma/GitHub Repo/DotNET-Practice-Solutions/Session Solution/C#Advanced/Assignment4_Delegate/obj/Debug/net8.0/ref/Assignment4_Delegate.dll

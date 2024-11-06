@@ -1,5 +1,6 @@
 ﻿using Assignment4_Delegate;
 using Assignment4_Delegate.Example2;
+using Assignment4_Delegate.Example_3;
 
 internal class Program
 {
@@ -39,33 +40,44 @@ internal class Program
 
         #region Delegate Example 2: Create a list of nummbers based on a condition
 
-        List<int> Numbers = Enumerable.Range(1, 100).ToList();
-        System.Console.WriteLine("Odd Numbers");
-        List<int> oddNumbers = Helper.GetNumbers(Numbers, ConditionalFunctions.CheckOdd);
-        foreach (var item in oddNumbers)
-        {
-            System.Console.Write($"{item} ");
-        }
-        System.Console.WriteLine("\nEven Numbers");
+        ///List<int> Numbers = Enumerable.Range(1, 100).ToList();
+        ///System.Console.WriteLine("Odd Numbers");
+        ///List<int> oddNumbers = Helper.GetNumbers(Numbers, ConditionalFunctions.CheckOdd);
+        ///foreach (var item in oddNumbers)
+        ///{
+        ///    System.Console.Write($"{item} ");
+        ///}
+        ///System.Console.WriteLine("\nEven Numbers");
+///
+        ///List<int> EvenNumbers = Helper.GetNumbers(Numbers, ConditionalFunctions.CheckEven);
+        ///foreach (var item in EvenNumbers)
+        ///{
+        ///    System.Console.Write($"{item} ");
+        ///}
+        ///System.Console.WriteLine("\nDivisable by 7 Numbers");
+///
+        ///List<int> NumbersDivisableBy7 = Helper.GetNumbers(Numbers, ConditionalFunctions.CheckDivisableBy7);
+        ///foreach (var item in NumbersDivisableBy7)
+        ///{
+        ///    System.Console.Write($"{item} ");
+        ///}
+        ///System.Console.WriteLine("\nDivisable by 10 Numbers");
+///
+        ///List<int> NumbersDivisableBy10 = Helper.GetNumbers(Numbers, ConditionalFunctions.CheckDivisableBy10);
+        ///foreach (var item in NumbersDivisableBy10)
+        ///{
+        ///    System.Console.Write($"{item} ");
+        ///}
 
-        List<int> EvenNumbers = Helper.GetNumbers(Numbers, ConditionalFunctions.CheckEven);
-        foreach (var item in EvenNumbers)
-        {
-            System.Console.Write($"{item} ");
-        }
-        System.Console.WriteLine("\nDivisable by 7 Numbers");
+        #endregion
 
-        List<int> NumbersDivisableBy7 = Helper.GetNumbers(Numbers, ConditionalFunctions.CheckDivisableBy7);
-        foreach (var item in NumbersDivisableBy7)
-        {
-            System.Console.Write($"{item} ");
-        }
-        System.Console.WriteLine("\nDivisable by 10 Numbers");
+        #region Delegate Example 3: Create a list of Generics based on a condition
+        List<string> Names = new List<string>() { "Ahmed", "Omar", "May", "Kareem", "Manar" };
 
-        List<int> NumbersDivisableBy10 = Helper.GetNumbers(Numbers, ConditionalFunctions.CheckDivisableBy10);
-        foreach (var item in NumbersDivisableBy10)
+        List<string> Result  = Helper2.GetElementsBasedOnCondition<string>(Names, GenericConditionalFunctions<string>.checkStringLength);
+        foreach (var item in Result)
         {
-            System.Console.Write($"{item} ");
+            System.Console.WriteLine(item);
         }
 
         #endregion

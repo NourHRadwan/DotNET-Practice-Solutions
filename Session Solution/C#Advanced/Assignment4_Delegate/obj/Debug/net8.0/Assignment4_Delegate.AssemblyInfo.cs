@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Assignment4_Delegate")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1b07fe966d52324d5b0398ff35cf2ed5b304e452")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+60ba852ad458b6cf1176d29dfd847b97d1751c82")]
 [assembly: System.Reflection.AssemblyProductAttribute("Assignment4_Delegate")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Assignment4_Delegate")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

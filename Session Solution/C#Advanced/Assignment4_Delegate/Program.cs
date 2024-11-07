@@ -159,17 +159,19 @@ internal class Program
 
                 #endregion
 
-                #region Built in Delegates with Lambda Expressions
+                #region Built in Delegates with Lambda Expressions and var
                 //1. Predicate
                 // Take 1 parameter (Generic) and return a boolean
 
                 //Predicate<int> predicate;
                 //predicate = (x) => x == 0;
+                var Predicate = (int x) => x == 0;
                 //System.Console.WriteLine(predicate(10)); //False
                 //
                 ////2. Func ==> Take 1 or more parameters and return a value
                 //Func<int, int> func; //Alaway the last parameter is the return type
                 //func = x => x * 2;
+                var Func = (int x) => x * 2;
                 //System.Console.WriteLine(func(10)); //20
                 //
                 //Func<int, string> func2;
@@ -180,6 +182,7 @@ internal class Program
                 ////3. Action ==> Take 1 or more parameters and return void
                 //Action<int> action;
                 //action = x => Console.WriteLine(x * 2);
+                var Action = (int x) => System.Console.WriteLine(x * 2); //using var to avoid writing the type
                 //action(10); //20
                 #endregion
         }

@@ -2,6 +2,7 @@
 using Assignment4_Delegate.Assignmet_4_Question_1_;
 using Assignment4_Delegate.Example2;
 using Assignment4_Delegate.Example_3;
+using System.Security.Cryptography.X509Certificates;
 
 
 internal class Program
@@ -127,9 +128,18 @@ internal class Program
                     new Customer {name = "Mohamed Hassan", mobile = 01022000000, email = "MohamedHassa@Gmail.com"},
                     new Customer {name = "HossamEldin Ali", mobile = 01000023400, email = "HossamEldinAlidwan@Gmail.com"},
                 };
+                Action<Customer> PrintCustomerDetails = (customers) =>
+                {
+                        System.Console.WriteLine($"Name: {customers.name}, Mobile: {customers.mobile}, Email: {customers.email}");
+                };
 
-                Utility.PerformActionOnCustomers<Customer>(customers, RequestedAction.PrintCustomerDetails);
-                Utility.PerformActionOnCustomers<Customer>(customers, RequestedAction.SendWelcomeEmail);
+                Action<Customer> SendWelcomeEmail = (customers) =>
+                {
+                        System.Console.WriteLine($"Welcome {customers.name}, we are glad to have you with us.");
+                };
+
+                Utility.PerformActionOnCustomers<Customer>(customers, PrintCustomerDetails);
+                Utility.PerformActionOnCustomers<Customer>(customers, SendWelcomeEmail);
 
                 ///Name: Nour Radwan, Mobile: 1000000000, Email: NourRadwan@Gmail.com
                 ///Name: Mohamed Hassan, Mobile: 1022000000, Email: MohamedHassa@Gmail.com
@@ -137,6 +147,40 @@ internal class Program
                 ///Welcome Nour Radwan, we are glad to have you with us.
                 ///Welcome Mohamed Hassan, we are glad to have you with us.
                 ///Welcome HossamEldin Ali, we are glad to have you with us.
+                #endregion
+
+                #region  Assignmet 4 Question 2
+                ///Write an application that stores data about some employees.Each employee has a name, years of experience and salary.
+                ///Write a method that takes a delegate as a parameter to define custom sorting criteria SortEmployees(List<Employee>, Func<Employee, Employee, int> comparison).
+                ///Write a method CalculateBonus(List<Employee> employees, Func<Employee, double> bonusCalculator) that calculates a bonus for each employee using a delegate.Calculate bonuses based on different criteria(e.g., experience, salary).
+
+
+
+
+                #endregion
+
+                #region Built in Delegates with Lambda Expressions
+                //1. Predicate
+                // Take 1 parameter (Generic) and return a boolean
+
+                //Predicate<int> predicate;
+                //predicate = (x) => x == 0;
+                //System.Console.WriteLine(predicate(10)); //False
+                //
+                ////2. Func ==> Take 1 or more parameters and return a value
+                //Func<int, int> func; //Alaway the last parameter is the return type
+                //func = x => x * 2;
+                //System.Console.WriteLine(func(10)); //20
+                //
+                //Func<int, string> func2;
+                //func2 = x => x.ToString();
+                //System.Console.WriteLine(func2(10)); //10
+                //
+                //
+                ////3. Action ==> Take 1 or more parameters and return void
+                //Action<int> action;
+                //action = x => Console.WriteLine(x * 2);
+                //action(10); //20
                 #endregion
         }
 }

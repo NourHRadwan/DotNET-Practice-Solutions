@@ -1,5 +1,7 @@
 ﻿using System.Collections;
-
+using System.Security.Cryptography.X509Certificates;
+using static LINQ_PracticeSession.ListGenerator;
+//we used the word static ?
 
 namespace LINQ_PracticeSession;
 
@@ -78,6 +80,20 @@ class Program
         #endregion
 
 
+        #endregion
+
+        #region Filtration Operators
+        //Restriction Operator - Where
+        var Result2 = ProductList.Where(P => P.UnitsInStock == 0 && P.Category == "Meat/Poultry");
+        foreach (var Numbers in Result2)
+            Console.Write($"{Numbers}\n");
+        Result2 = ProductList.Where(P => P.ProductName == "Tofu");
+        foreach (var Numbers in Result2)
+            Console.Write($"{Numbers}\n");
+
+
+        //Indexed Where
+        //P --> Parameter
         #endregion
 
     }

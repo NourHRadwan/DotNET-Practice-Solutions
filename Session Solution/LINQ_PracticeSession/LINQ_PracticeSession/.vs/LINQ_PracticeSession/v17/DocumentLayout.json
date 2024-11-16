@@ -5,6 +5,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{FF47F8B1-D4C7-4319-8701-31F5F66208E4}|LINQ_PracticeSession.csproj|c:\\users\\nourh\\source\\repos\\dotnet-practice-solutions\\session solution\\linq_practicesession\\linq_practicesession\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FF47F8B1-D4C7-4319-8701-31F5F66208E4}|LINQ_PracticeSession.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF47F8B1-D4C7-4319-8701-31F5F66208E4}|LINQ_PracticeSession.csproj|c:\\users\\nourh\\source\\repos\\dotnet-practice-solutions\\session solution\\linq_practicesession\\linq_practicesession\\listgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF47F8B1-D4C7-4319-8701-31F5F66208E4}|LINQ_PracticeSession.csproj|solutionrelative:listgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,16 +26,33 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ListGenerator.cs",
+              "DocumentMoniker": "C:\\Users\\nourh\\source\\repos\\DotNET-Practice-Solutions\\Session Solution\\LINQ_PracticeSession\\LINQ_PracticeSession\\ListGenerator.cs",
+              "RelativeDocumentMoniker": "ListGenerator.cs",
+              "ToolTip": "C:\\Users\\nourh\\source\\repos\\DotNET-Practice-Solutions\\Session Solution\\LINQ_PracticeSession\\LINQ_PracticeSession\\ListGenerator.cs",
+              "RelativeToolTip": "ListGenerator.cs",
+              "ViewState": "AgIAAF8AAAAAAAAAAADwv24AAABdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T12:54:17.08Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\nourh\\source\\repos\\DotNET-Practice-Solutions\\Session Solution\\LINQ_PracticeSession\\LINQ_PracticeSession\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\nourh\\source\\repos\\DotNET-Practice-Solutions\\Session Solution\\LINQ_PracticeSession\\LINQ_PracticeSession\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAfAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\nourh\\source\\repos\\DotNET-Practice-Solutions\\Session Solution\\LINQ_PracticeSession\\LINQ_PracticeSession\\Program.cs*",
+              "RelativeToolTip": "Program.cs*",
+              "ViewState": "AgIAADYAAAAAAAAAAAAQwFkAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-12T08:49:14.791Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             }
           ]
         }

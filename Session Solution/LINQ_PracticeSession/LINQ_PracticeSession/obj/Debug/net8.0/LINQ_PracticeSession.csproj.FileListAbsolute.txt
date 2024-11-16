@@ -1,0 +1,15 @@
+C:\Users\nourh\source\repos\DotNET-Practice-Solutions\Session Solution\LINQ_PracticeSession\LINQ_PracticeSession\obj\Debug\net8.0\LINQ_PracticeSession.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nourh\source\repos\DotNET-Practice-Solutions\Session Solution\LINQ_PracticeSession\LINQ_PracticeSession\obj\Debug\net8.0\LINQ_PracticeSession.AssemblyInfoInputs.cache
+C:\Users\nourh\source\repos\DotNET-Practice-Solutions\Session Solution\LINQ_PracticeSession\LINQ_PracticeSession\obj\Debug\net8.0\LINQ_PracticeSession.AssemblyInfo.cs
+C:\Users\nourh\source\repos\DotNET-Practice-Solutions\Session Solution\LINQ_PracticeSession\LINQ_PracticeSession\obj\Debug\net8.0\LINQ_PracticeSession.csproj.CoreCompileInputs.cache
+C:\Users\nourh\source\repos\DotNET-Practice-Solutions\Session Solution\LINQ_PracticeSession\LINQ_PracticeSession\obj\Debug\net8.0\LINQ_PracticeSession.sourcelink.json
+C:\Users\nourh\source\repos\DotNET-Practice-Solutions\Session Solution\LINQ_PracticeSession\LINQ_PracticeSession\bin\Debug\net8.0\LINQ_PracticeSession.exe
+C:\Users\nourh\source\repos\DotNET-Practice-Solutions\Session Solution\LINQ_PracticeSession\LINQ_PracticeSession\bin\Debug\net8.0\LINQ_PracticeSession.deps.json
+C:\Users\nourh\source\repos\DotNET-Practice-Solutions\Session Solution\LINQ_PracticeSession\LINQ_PracticeSession\bin\Debug\net8.0\LINQ_PracticeSession.runtimeconfig.json
+C:\Users\nourh\source\repos\DotNET-Practice-Solutions\Session Solution\LINQ_PracticeSession\LINQ_PracticeSession\bin\Debug\net8.0\LINQ_PracticeSession.dll
+C:\Users\nourh\source\repos\DotNET-Practice-Solutions\Session Solution\LINQ_PracticeSession\LINQ_PracticeSession\bin\Debug\net8.0\LINQ_PracticeSession.pdb
+C:\Users\nourh\source\repos\DotNET-Practice-Solutions\Session Solution\LINQ_PracticeSession\LINQ_PracticeSession\obj\Debug\net8.0\LINQ_PracticeSession.dll
+C:\Users\nourh\source\repos\DotNET-Practice-Solutions\Session Solution\LINQ_PracticeSession\LINQ_PracticeSession\obj\Debug\net8.0\refint\LINQ_PracticeSession.dll
+C:\Users\nourh\source\repos\DotNET-Practice-Solutions\Session Solution\LINQ_PracticeSession\LINQ_PracticeSession\obj\Debug\net8.0\LINQ_PracticeSession.pdb
+C:\Users\nourh\source\repos\DotNET-Practice-Solutions\Session Solution\LINQ_PracticeSession\LINQ_PracticeSession\obj\Debug\net8.0\LINQ_PracticeSession.genruntimeconfig.cache
+C:\Users\nourh\source\repos\DotNET-Practice-Solutions\Session Solution\LINQ_PracticeSession\LINQ_PracticeSession\obj\Debug\net8.0\ref\LINQ_PracticeSession.dll

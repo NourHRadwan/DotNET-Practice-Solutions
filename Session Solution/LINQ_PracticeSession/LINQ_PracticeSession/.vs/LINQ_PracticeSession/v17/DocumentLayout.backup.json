@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\nourh\\source\\repos\\DotNET-Practice-Solutions\\Session Solution\\LINQ_PracticeSession\\LINQ_PracticeSession\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FF47F8B1-D4C7-4319-8701-31F5F66208E4}|LINQ_PracticeSession.csproj|c:\\users\\nourh\\source\\repos\\dotnet-practice-solutions\\session solution\\linq_practicesession\\linq_practicesession\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF47F8B1-D4C7-4319-8701-31F5F66208E4}|LINQ_PracticeSession.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\nourh\\source\\repos\\DotNET-Practice-Solutions\\Session Solution\\LINQ_PracticeSession\\LINQ_PracticeSession\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\nourh\\source\\repos\\DotNET-Practice-Solutions\\Session Solution\\LINQ_PracticeSession\\LINQ_PracticeSession\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAqwE8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T08:49:14.791Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

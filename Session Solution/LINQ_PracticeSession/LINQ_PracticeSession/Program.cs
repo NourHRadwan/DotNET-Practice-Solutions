@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System.Security.Cryptography;
 using System.Security.Cryptography.X509Certificates;
 using static LINQ_PracticeSession.ListGenerator;
 //we used the word static ?
@@ -100,6 +101,81 @@ class Program
         #region Transoframtion Operator - Select  | SelectMany
 
         #endregion
+        #endregion
+
+        #region Transoformation Operator [Select - SelectMany]
+        //Select Operator
+        #region Prodcut ID
+        //Get Product ID
+        //1.fluent Syntax
+        //var Result2 = ProductList.Select(P => P.ProductID);
+        //2. Query Syntax
+
+        //Result2 = from P in ProductList
+        //          select P.ProductID; 
+        #endregion
+        #region Customer Name
+
+        //Get Customer Name
+        //1.Fluent Syntax
+        //var Result2 = CustomerList.Select(C => C.CustomerName);
+        //
+        ////2. Query Syntax
+        //Result2 = from C in CustomerList
+        //          select C.CustomerName;
+        //
+
+        #endregion
+
+        #region SelectMany
+        //SelectMany
+        //get Orders from CustomerList
+        //1. Fluent Syntax
+
+        //var Result2 = CustomerList.SelectMany(C => C.Orders);
+
+        //2. Query Syntax
+        ///Result2 = from C in CustomerList
+        ///          from O in C.Orders
+        ///          select O; 
+        #endregion
+
+        #region Select Product Id and Product Name
+        //Select Product ID and Product Name
+        //1. Fluent Syntax using Anyoymous Type
+        //var Result2 = ProductList.Select(P => new { P.ProductID, P.ProductName });
+        //CLR will creat a class in Runtime and Override ToString() Method
+
+        //Query Syntax
+        var Result3 = from P in ProductList
+                      select new
+                      {
+                          P.ProductName,
+                          P.ProductID
+                      };
+
+        #endregion
+
+        #region Select Product in Stock and Apply Discount 10 on it is Price
+        // Fluent Syntax
+        var ProductsInStock = ProductList.Where(P => P.UnitsInStock > 0)
+                                         .Select(P => new
+                                         {
+                                             P.ProductID,
+                                             P.ProductName,
+                                             P.UnitPrice,
+                                             newPrice = P.UnitPrice - (P.UnitPrice * 0.1M)
+                                         });
+        foreach(var Product in ProductsInStock)
+            Console.WriteLine(Product);
+
+
+
+
+        #endregion
+
+        
+
         #endregion
 
     }

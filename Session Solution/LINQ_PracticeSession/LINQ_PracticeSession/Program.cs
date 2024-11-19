@@ -57,24 +57,24 @@ class Program
 
         #region Deffered Excution
         // 1. Deffered Excution (Latest Version of Data) [10 out 13 Categories]
-        List<int> NumbersList = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-        var Result = NumbersList.Where((N) => N % 2 == 1);
-        NumbersList.AddRange(new int[] { 11, 12, 13, 14, 15 });
-        foreach (int Numbers in Result)
-            Console.Write($"{Numbers} "); // 1 3 5 7 9 11 13 15
+        //List<int> NumbersList = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+        //var Result = NumbersList.Where((N) => N % 2 == 1);
+        //NumbersList.AddRange(new int[] { 11, 12, 13, 14, 15 });
+        //foreach (int Numbers in Result)
+        //    Console.Write($"{Numbers} "); // 1 3 5 7 9 11 13 15
         #endregion
 
         #region Immediate Excution [ELement Operators, Casting Operator, Aggergate Operator]
         //2. Immediate Excution [3 out of 13 Category]
 
         //Casting Operator
-        Result = NumbersList.Where((N) => N % 2 == 1).ToList();
+        //Result = NumbersList.Where((N) => N % 2 == 1).ToList();
 
         //ELemenat Operator
-        var Results = NumbersList.Where((N) => N % 2 == 1).First();
+        //var Results = NumbersList.Where((N) => N % 2 == 1).First();
 
         //Aggergate Operator
-        Results = NumbersList.Where((N) => N % 2 == 1).Count();
+        //Results = NumbersList.Where((N) => N % 2 == 1).Count();
 
 
 
@@ -166,7 +166,7 @@ class Program
                                              P.UnitPrice,
                                              newPrice = P.UnitPrice - (P.UnitPrice * 0.1M)
                                          });
-        foreach(var Product in ProductsInStock)
+        foreach (var Product in ProductsInStock)
             Console.WriteLine(Product);
 
 
@@ -174,8 +174,79 @@ class Program
 
         #endregion
 
-        
 
+
+        #endregion
+
+        #region Ordering Operator
+        //[Ascending Order , Descending, Reverse, ThenBy, ThenByDescending]
+
+        #region Get Products Ordered By Price ASC
+        //IOrderdEnumrable 
+        //var Results2 = ProductList.OrderBy(P => P.UnitPrice);
+        //
+        //Results2 = from P in ProductList
+        //           orderby P.UnitPrice
+        //           select P;
+
+        #endregion
+
+        #region Order by Desc
+        //var Results2 = ProductList.OrderByDescending(P => P.UnitPrice);
+        //
+        //Results2 = from P in ProductList
+        //           orderby P.UnitPrice descending
+        //           select P;
+        //
+        #endregion
+
+        #region Get Products Ordered By Price ASC and Number of Items in Stock DEC
+        //var Results2 = ProductList.OrderBy(P => P.UnitPrice).ThenByDescending(P => P.UnitsInStock);
+
+        #endregion
+
+        #region Elements Operators - Immadiate Excution
+        //First, FirstOrDefault, Last, LastOrDefault, Single, SingleOrDefault, ElementAt, ElementAtOrDefault
+        #region First, FirstOrDefault, Last, LastOrDefault
+        //var Result = ProductList.First(); //Get First Element at sequance
+        //Result = ProductList.Last(); //Get Last Element at sequance
+
+        //Console.WriteLine(Result?.ProductName ?? "Not Found");
+        //List<Product> EmptyList = new List<Product>();
+        //Result = EmptyList.First(); // System.InvalidOperationException: 'Sequence contains no elements'
+        //Result = EmptyList.FirstOrDefault(); //Return Null
+        //Result = EmptyList.LastOrDefault();
+        //First and Last will throw exception if the sequence is empty
+
+        //FirstOrDefault() and LastOrDefault() will return null if the sequence is empty
+
+        #region First and Last Overloads
+        //var Result = ProductList.First(P => P.UnitsInStock == 0);
+        // Get the first product that match the condition 
+        //Result = ProductList.Last(P => P.UnitsInStock == 0);
+        // Get the last product that match the condition
+        // ** First and Last will throw exception if there is no matching conditions
+
+
+        //var Result = ProductList.FirstOrDefault(P => P.UnitsInStock == 0);
+        // if there is no matching elements ==> return the default (NULL)
+
+        #endregion
+        #endregion
+
+        #region ElementsAt
+        //var Result = ProductList.ElementAt(77);
+        //Result = ProductList.ElementAtOrDefault(77);
+        #endregion
+
+        #region Single
+        var Result = ProductList.Single(P => P.ProductID == 1);
+        //Return the only element that match the condition
+        //If sequence contains only one element that match condition -> Return it
+        //Else will throw expetion
+
+        #endregion
+        #endregion
         #endregion
 
     }

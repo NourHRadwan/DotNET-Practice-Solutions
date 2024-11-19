@@ -84,16 +84,22 @@ class Program
 
         #region Filtration Operators
         //Restriction Operator - Where
-        var Result2 = ProductList.Where(P => P.UnitsInStock == 0 && P.Category == "Meat/Poultry");
-        foreach (var Numbers in Result2)
-            Console.Write($"{Numbers}\n");
-        Result2 = ProductList.Where(P => P.ProductName == "Tofu");
-        foreach (var Numbers in Result2)
-            Console.Write($"{Numbers}\n");
+        ///var Result2 = ProductList.Where(P => P.UnitsInStock == 0 && P.Category == "Meat/Poultry");
+        ///foreach (var Numbers in Result2)
+        ///    Console.Write($"{Numbers}\n");
+        ///Result2 = ProductList.Where(P => P.ProductName == "Tofu");
+        ///foreach (var Numbers in Result2)
+        ///    Console.Write($"{Numbers}\n");
 
 
         //Indexed Where
         //P --> Parameter
+        //I ==> index ==> GET from the first 10 products, the products that are out of stock
+
+
+        #region Transoframtion Operator - Select  | SelectMany
+
+        #endregion
         #endregion
 
     }

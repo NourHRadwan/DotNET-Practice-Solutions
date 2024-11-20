@@ -147,27 +147,27 @@ class Program
         //CLR will creat a class in Runtime and Override ToString() Method
 
         //Query Syntax
-        var Result3 = from P in ProductList
-                      select new
-                      {
-                          P.ProductName,
-                          P.ProductID
-                      };
+        //var Result3 = from P in ProductList
+        //              select new
+        //              {
+        //                  P.ProductName,
+        //                  P.ProductID
+        //              };
 
         #endregion
 
         #region Select Product in Stock and Apply Discount 10 on it is Price
         // Fluent Syntax
-        var ProductsInStock = ProductList.Where(P => P.UnitsInStock > 0)
-                                         .Select(P => new
-                                         {
-                                             P.ProductID,
-                                             P.ProductName,
-                                             P.UnitPrice,
-                                             newPrice = P.UnitPrice - (P.UnitPrice * 0.1M)
-                                         });
-        foreach (var Product in ProductsInStock)
-            Console.WriteLine(Product);
+        //var ProductsInStock = ProductList.Where(P => P.UnitsInStock > 0)
+        //                                 .Select(P => new
+        //                                 {
+        //                                     P.ProductID,
+        //                                     P.ProductName,
+        //                                     P.UnitPrice,
+        //                                     newPrice = P.UnitPrice - (P.UnitPrice * 0.1M)
+        //                                 });
+        //foreach (var Product in ProductsInStock)
+        //    Console.WriteLine(Product);
 
 
 
@@ -240,13 +240,84 @@ class Program
         #endregion
 
         #region Single
-        var Result = ProductList.Single(P => P.ProductID == 1);
+        //var Result = ProductList.Single(P => P.ProductID == 1);
         //Return the only element that match the condition
         //If sequence contains only one element that match condition -> Return it
         //Else will throw expetion
 
         #endregion
         #endregion
+        #endregion
+
+        #region Casting Operator [ToList, ToArray, ToDictionary, ToHashSet, OfType]
+        //ToList
+        //List<Product> Result = ProductList.Where(P => P.UnitsInStock == 0).ToList();
+
+        //ToArray
+        //Product[] Result = ProductList.Where(P => P.UnitsInStock ==0).ToArray();
+
+        //ToDictionary
+        //Dictionary<long, string?> Result = ProductList.Where(P => P.UnitsInStock == 0)
+        //                                               .ToDictionary(P => P.ProductID, P => P.ProductName);
+
+        #endregion
+
+        #region Solving Questions on LINQ
+        // 1. Sort a list of Products by name
+        //var Result = ProductList.OrderBy(P => P.ProductName);
+
+        //2. Find all products that are in stock and cost more than 3.00 per unit
+        //var Result = ProductList.Where(P => P.UnitsInStock > 0 && P.UnitPrice > 3)
+        //                        .OrderBy(n => n.UnitPrice);
+
+        //3. Return digits whose name is shorter than their value
+        //string[] names = {"zero", "one", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine" };
+
+        //var Result = names.Where((digit, index) => digit.Length < index);
+
+
+        //4. Get First product out of stock
+        //var Result = ProductList.Where(P => P.UnitsInStock == 0).First();
+
+        //5. Return the first product whose price > 1000. unless there is no match
+        //var Result = ProductList.FirstOrDefault(P => P.UnitPrice >  1000);
+
+        //6. Retrive the secound number greater than 5
+        //int[] arr = { 5, 4, 1, 3, 9, 8, 6, 7 };
+        //
+        //var Result = arr.Where(P => P > 5).Skip(1).First();
+
+        //7. Use Count to get the number of odd numbers in the array
+        //int[] arr = {5,4,1,9,8,6,7,2,0 };
+        //
+        //var Result = arr.Count(P => P % 2 == 1);
+
+        //8. Return a list of customers and how many orders each has.
+        ///var Result = CustomerList.Select(C => new
+        ///{
+        ///    C.CustomerID,
+        ///    C.CustomerName,
+        ///    orders = C.Orders.Count()
+        ///});
+
+
+        //9. Return a list of categories and how many products each has
+
+        var Result = ProductList.GroupBy(C => C.Category).Select
+            (G => new
+            {
+                G.Key,
+                Count = G.Count()
+            }); 
+
+
+
+
+
+        //Console.WriteLine(Result);
+
+        //foreach (var Product in Result)
+        //    Console.WriteLine(Product);
         #endregion
 
     }

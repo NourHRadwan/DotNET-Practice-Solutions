@@ -378,7 +378,7 @@ class Program
         #endregion
 
         #region Grouping Operator
-        #region Group By
+
         //Group By --Query syntax
         //Return a list of categories and how many products each has
         //var Result = from P in ProductList
@@ -438,9 +438,45 @@ class Program
         //             };
 
 
-
         #endregion
 
+        #region Partitioning Operators
+
+        //Divide the sequence into parts
+
+        //Take : Take Number of Elements from First Only
+        //var Result = ProductList.Take(10);
+        //Result = ProductList.Where(P => P.UnitsInStock > 0).Take(5);
+
+
+        //Skip : Skip Number of Elements from First and Get Rest of Elements
+        //Result = ProductList.Where(P => P.UnitsInStock == 0).Skip(2);
+
+        //2nd Ten
+        //Result = ProductList.Skip(10).Take(10);
+
+        //TakeLast : Take Number of Elements from Last Only
+        //Result = ProductList.Where(P => P.UnitsInStock > 0).TakeLast(5);
+
+        //SkipLast : Skip Number of Elements from Last and Get Rest of Elements
+        //Result = ProductList.Where(P => P.UnitsInStock == 0).SkipLast(2);
+
+
+        //TakeWhile : Take Elements from the first as long as the condition is true
+        //int[] Numbers = { 5, 6, 7, 8, 9, 1, 2, 3, 4, 10 };
+
+        //var Result = Numbers.TakeWhile(N => N < 8);
+
+        //indexed TakeWhile
+        //Result = Numbers.TakeWhile((N, index) => N > index);
+
+
+
+        //SkipWhile : Skip Elements from the first as long as the condition is true
+        //var Result = Numbers.SkipWhile(N => N < 8);
+
+        //foreach (var Product in Result)
+        //    Console.WriteLine(Product);
 
         #endregion
 

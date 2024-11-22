@@ -1,6 +1,8 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Security.Cryptography;
 using System.Security.Cryptography.X509Certificates;
+using System.Xml.Linq;
 using static LINQ_PracticeSession.ListGenerator;
 //we used the word static ?
 
@@ -262,63 +264,173 @@ class Program
 
         #endregion
 
-        #region Solving Questions on LINQ
-        // 1. Sort a list of Products by name
-        //var Result = ProductList.OrderBy(P => P.ProductName);
+        #region Generation Operators - Deffered Excution
+        //1. Range
+        //var Result = Enumerable.Range(1, 10);
+        //Valid Only with fluent Syntax
+        //The only way to call them is as static method from Enumerable Class
 
-        //2. Find all products that are in stock and cost more than 3.00 per unit
-        //var Result = ProductList.Where(P => P.UnitsInStock > 0 && P.UnitPrice > 3)
-        //                        .OrderBy(n => n.UnitPrice);
+        //2. Repeat
+        //var Result = Enumerable.Repeat(new Product(), 5);
+        //// Return IEnumerable<Product> with 5 elements
+        //foreach(var item in Result) {
+        //    Console.WriteLine($"{item}");
+        //}
 
-        //3. Return digits whose name is shorter than their value
-        //string[] names = {"zero", "one", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine" };
-
-        //var Result = names.Where((digit, index) => digit.Length < index);
-
-
-        //4. Get First product out of stock
-        //var Result = ProductList.Where(P => P.UnitsInStock == 0).First();
-
-        //5. Return the first product whose price > 1000. unless there is no match
-        //var Result = ProductList.FirstOrDefault(P => P.UnitPrice >  1000);
-
-        //6. Retrive the secound number greater than 5
-        //int[] arr = { 5, 4, 1, 3, 9, 8, 6, 7 };
-        //
-        //var Result = arr.Where(P => P > 5).Skip(1).First();
-
-        //7. Use Count to get the number of odd numbers in the array
-        //int[] arr = {5,4,1,9,8,6,7,2,0 };
-        //
-        //var Result = arr.Count(P => P % 2 == 1);
-
-        //8. Return a list of customers and how many orders each has.
-        ///var Result = CustomerList.Select(C => new
-        ///{
-        ///    C.CustomerID,
-        ///    C.CustomerName,
-        ///    orders = C.Orders.Count()
-        ///});
+        ////3. Empty
+        //var ArrayResult = Enumerable.Empty<Product>().ToArray();
+        //// Same result as
+        //// Product[] ArrayResult = new Product[0];
+        ////both of them will generate empty array of products
 
 
-        //9. Return a list of categories and how many products each has
-
-        var Result = ProductList.GroupBy(C => C.Category).Select
-            (G => new
-            {
-                G.Key,
-                Count = G.Count()
-            }); 
-
-
-
-
-
-        //Console.WriteLine(Result);
-
-        //foreach (var Product in Result)
-        //    Console.WriteLine(Product);
+        //var List = Enumerable.Empty<Product>().ToList();
+        ////List<Product> List = new List<Product>();
         #endregion
 
+        #region Set Operators [Union Family] - Defferred Excution
+        // Union, Intersect, Except, Distinct, Concat
+        // using two sequences
+
+        //var seq1 = Enumerable.Range(0,100); //0 .. 99
+        //var seq2 = Enumerable.Range(50, 100); //50 .. 149
+
+        ////Union - Combine two sequences and remove duplicates
+        ////var Result = seq1.Union(seq2); //Calling as object member method
+        ////var Result = Enumerable.Union(seq1, seq2); //Calling as static method from Enumerable Class
+
+
+        ////Concat - Combine two sequenced with duplication
+        //var Result = seq1.Concat(seq2);
+
+
+        ////Distinct
+        //Result = Result.Distinct(); // Remove the duplication
+
+        ////intersect --  Return the elements the exist in seq1 and seq2
+        //Result = seq1.Intersect(seq2);
+
+        ////Except -- Return the elements that exist in seq1 but not in seq2
+        //Result = seq1.Except(seq2);
+
+        //foreach ( var item in seq1 ) 
+        //    Console.Write($"{item} ");
+
+        //Console.WriteLine("\n ==============================================");
+
+        //foreach (var item in seq2)
+        //    Console.Write($"{item} ");
+        //Console.WriteLine("\n ==============================================");
+
+        //foreach (var item in Result)
+        //    Console.Write($"{item} ");
+
+        #endregion
+
+        #region Quentifier Operators - Deffered Excution
+        // All, Any, Contains, SequenceEqual
+        // Return Boolean Value
+        #region Any
+        //1. Any -  true if anyelement in the sequence match the condition
+        // Overload 1 ==> if Sequence contains at least one element => Return True
+        //var Result = ProductList.Any();
+
+        // Overload 2 ==> if Sequence contains at least one element that match the condition => Return True
+        //var Result = ProductList.Any(P => P.UnitsInStock > 1000); //False
+
+        #endregion
+
+        #region All
+        //var Result = ProductList.All(P => P.UnitsInStock == 0);
+        //IF all elements in sequence match the condition ==> True
+
+        #endregion
+
+        // SequenceEqual
+
+
+        #endregion
+
+        #region Zipping Operator - Deffered Excution
+        // Zip
+        //Produce a sequence 
+        string[] Names = { "Omar", "Amr", "Ahmed", "May" };
+        int[] Numbers = Enumerable.Range(1, 100).ToArray();
+        char[] Chars = { 'a', 'b', 'c' };
+
+        //var Result = Names.Zip(Numbers);
+        //(Omar, 1)(Amr, 2)(Ahmed, 3)(May, 4)
+
+        //var Result = Names.Zip(Numbers, (Name, Number) => new { index = Number, Name });
+        //{ index = 1, Name = Omar }
+        //{ index = 2, Name = Amr }
+        //{ index = 3, Name = Ahmed }
+        //{ index = 4, Name = May }
+
+        var Result = Names.Zip (Numbers, Chars);
+        foreach (var c in Result)
+        {
+            Console.Write($"{c}");
+        }
+            #endregion
+
+            #region Solving Questions on LINQ
+            // 1. Sort a list of Products by name
+            //var Result = ProductList.OrderBy(P => P.ProductName);
+
+            //2. Find all products that are in stock and cost more than 3.00 per unit
+            //var Result = ProductList.Where(P => P.UnitsInStock > 0 && P.UnitPrice > 3)
+            //                        .OrderBy(n => n.UnitPrice);
+
+            //3. Return digits whose name is shorter than their value
+            //string[] names = {"zero", "one", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine" };
+
+            //var Result = names.Where((digit, index) => digit.Length < index);
+
+
+            //4. Get First product out of stock
+            //var Result = ProductList.Where(P => P.UnitsInStock == 0).First();
+
+            //5. Return the first product whose price > 1000. unless there is no match
+            //var Result = ProductList.FirstOrDefault(P => P.UnitPrice >  1000);
+
+            //6. Retrive the secound number greater than 5
+            //int[] arr = { 5, 4, 1, 3, 9, 8, 6, 7 };
+            //
+            //var Result = arr.Where(P => P > 5).Skip(1).First();
+
+            //7. Use Count to get the number of odd numbers in the array
+            //int[] arr = {5,4,1,9,8,6,7,2,0 };
+            //
+            //var Result = arr.Count(P => P % 2 == 1);
+
+            //8. Return a list of customers and how many orders each has.
+            ///var Result = CustomerList.Select(C => new
+            ///{
+            ///    C.CustomerID,
+            ///    C.CustomerName,
+            ///    orders = C.Orders.Count()
+            ///});
+
+
+            //9. Return a list of categories and how many products each has
+
+            //var Result = ProductList.GroupBy(C => C.Category).Select
+            //    (G => new
+            //    {
+            //        G.Key,
+            //        Count = G.Count()
+            //    }); 
+
+
+
+
+
+            //Console.WriteLine(Result);
+
+            //foreach (var Product in Result)
+            //    Console.WriteLine(Product);
+            #endregion
+
+        }
     }
-}

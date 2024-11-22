@@ -1,7 +1,10 @@
 ﻿using System;
 using System.Collections;
+using System.Numerics;
+using System.Runtime.InteropServices;
 using System.Security.Cryptography;
 using System.Security.Cryptography.X509Certificates;
+using System.Text;
 using System.Xml.Linq;
 using static LINQ_PracticeSession.ListGenerator;
 //we used the word static ?
@@ -354,9 +357,9 @@ class Program
         #region Zipping Operator - Deffered Excution
         // Zip
         //Produce a sequence 
-        string[] Names = { "Omar", "Amr", "Ahmed", "May" };
-        int[] Numbers = Enumerable.Range(1, 100).ToArray();
-        char[] Chars = { 'a', 'b', 'c' };
+        //string[] Names = { "Omar", "Amr", "Ahmed", "May" };
+        //int[] Numbers = Enumerable.Range(1, 100).ToArray();
+        //char[] Chars = { 'a', 'b', 'c' };
 
         //var Result = Names.Zip(Numbers);
         //(Omar, 1)(Amr, 2)(Ahmed, 3)(May, 4)
@@ -367,70 +370,162 @@ class Program
         //{ index = 3, Name = Ahmed }
         //{ index = 4, Name = May }
 
-        var Result = Names.Zip (Numbers, Chars);
-        foreach (var c in Result)
-        {
-            Console.Write($"{c}");
-        }
-            #endregion
+        //var Result = Names.Zip (Numbers, Chars);
+        //foreach (var c in Result)
+        //{
+        //    Console.Write($"{c}");
+        //}
+        #endregion
 
-            #region Solving Questions on LINQ
-            // 1. Sort a list of Products by name
-            //var Result = ProductList.OrderBy(P => P.ProductName);
+        #region Grouping Operator
+        #region Group By
+        //Group By --Query syntax
+        //Return a list of categories and how many products each has
+        //var Result = from P in ProductList
+        //             group P by P.Category;
 
-            //2. Find all products that are in stock and cost more than 3.00 per unit
-            //var Result = ProductList.Where(P => P.UnitsInStock > 0 && P.UnitPrice > 3)
-            //                        .OrderBy(n => n.UnitPrice);
-
-            //3. Return digits whose name is shorter than their value
-            //string[] names = {"zero", "one", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine" };
-
-            //var Result = names.Where((digit, index) => digit.Length < index);
+        //Group By -- Fluent Syntax
+        //var Result = ProductList.GroupBy(P => P.Category);
 
 
-            //4. Get First product out of stock
-            //var Result = ProductList.Where(P => P.UnitsInStock == 0).First();
-
-            //5. Return the first product whose price > 1000. unless there is no match
-            //var Result = ProductList.FirstOrDefault(P => P.UnitPrice >  1000);
-
-            //6. Retrive the secound number greater than 5
-            //int[] arr = { 5, 4, 1, 3, 9, 8, 6, 7 };
-            //
-            //var Result = arr.Where(P => P > 5).Skip(1).First();
-
-            //7. Use Count to get the number of odd numbers in the array
-            //int[] arr = {5,4,1,9,8,6,7,2,0 };
-            //
-            //var Result = arr.Count(P => P % 2 == 1);
-
-            //8. Return a list of customers and how many orders each has.
-            ///var Result = CustomerList.Select(C => new
-            ///{
-            ///    C.CustomerID,
-            ///    C.CustomerName,
-            ///    orders = C.Orders.Count()
-            ///});
+        //foreach (var Category in Result)
+        //{
+        //    Console.WriteLine($"{Category.Key}");
+        //    foreach (var product in Category)
+        //        Console.WriteLine($"              {product.ProductName} has {product.UnitsInStock} unit");
+        //}
 
 
-            //9. Return a list of categories and how many products each has
+        //Group by Category for Products in Stock
+        //var Result = ProductList.Where(P => P.UnitsInStock > 0)
+        //                        .GroupBy(P => P.Category);
 
-            //var Result = ProductList.GroupBy(C => C.Category).Select
-            //    (G => new
-            //    {
-            //        G.Key,
-            //        Count = G.Count()
-            //    }); 
+        //Group Produts in Stock Grouped by Category that Contains More than 10 Products
+        //var Result = from P in ProductList
+        //             where P.UnitsInStock > 0
+        //             group P by P.Category
+        //             into C
+        //             where C.Count() > 10
+        //             select C;
+
+        //Fluent Syntax
+        //var Result = ProductList.Where(P => P.UnitsInStock > 0)
+        //                        .GroupBy(P => P.Category)
+        //                        .Where(C => C.Count() > 10);
+
+        //Get Category Name of Products in Stock that
+        //Contains more than 10 Products and Number of Products in Each Category
+
+        //Fluent Syntax
+        //var Result = ProductList.Where(P => P.UnitsInStock > 0)
+        //                        .GroupBy(P => P.Category)
+        //                        .Where(C => C.Count() > 10)
+        //                        .Select(X => new
+        //                        {
+        //                            CategoryName = X.Key,
+        //                            Count = X.Count()
+        //                        });
+
+
+        //Query Syntax
+        //var Result = from P in ProductList
+        //             where P.UnitsInStock > 0
+        //             group P by P.Category
+        //             into C
+        //             select new {
+        //                 CategoryName = C.Key,
+        //                 Count = C.Count()
+        //             };
 
 
 
+        #endregion
 
 
-            //Console.WriteLine(Result);
+        #endregion
 
-            //foreach (var Product in Result)
-            //    Console.WriteLine(Product);
-            #endregion
+        #region Solving Questions on LINQ
+        // 1. Sort a list of Products by name
+        //var Result = ProductList.OrderBy(P => P.ProductName);
 
-        }
+        //2. Find all products that are in stock and cost more than 3.00 per unit
+        //var Result = ProductList.Where(P => P.UnitsInStock > 0 && P.UnitPrice > 3)
+        //                        .OrderBy(n => n.UnitPrice);
+
+        //3. Return digits whose name is shorter than their value
+        //string[] names = {"zero", "one", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine" };
+
+        //var Result = names.Where((digit, index) => digit.Length < index);
+
+
+        //4. Get First product out of stock
+        //var Result = ProductList.Where(P => P.UnitsInStock == 0).First();
+
+        //5. Return the first product whose price > 1000. unless there is no match
+        //var Result = ProductList.FirstOrDefault(P => P.UnitPrice >  1000);
+
+        //6. Retrive the secound number greater than 5
+        //int[] arr = { 5, 4, 1, 3, 9, 8, 6, 7 };
+        //
+        //var Result = arr.Where(P => P > 5).Skip(1).First();
+
+        //7. Use Count to get the number of odd numbers in the array
+        //int[] arr = {5,4,1,9,8,6,7,2,0 };
+        //
+        //var Result = arr.Count(P => P % 2 == 1);
+
+        //8. Return a list of customers and how many orders each has.
+        ///var Result = CustomerList.Select(C => new
+        ///{
+        ///    C.CustomerID,
+        ///    C.CustomerName,
+        ///    orders = C.Orders.Count()
+        ///});
+
+
+        //9. Return a list of categories and how many products each has
+        //var Result = from P in ProductList
+        //             group P by P.Category;
+
+
+
+        //Console.WriteLine(Result);
+
+        //foreach (var Category in Result)
+        //{
+        //    Console.WriteLine($"{Category.Key}");
+        //    foreach (var product in Category)
+        //        Console.WriteLine($"              {product.ProductName} has {product.UnitsInStock} unit");
+        //}
+        //Beverages
+        //              Chai has 100
+        //              Chang has 17
+        //              Guaraná Fantástica has 20
+        //              Sasquatch Ale has 111
+        //              Steeleye Stout has 20
+        //              Côte de Blaye has 17
+        //              Chartreuse verte has 69
+        //              Ipoh Coffee has 17
+        //              Laughing Lumberjack Lager has 52
+        //              Outback Lager has 15
+        //              Rhönbräu Klosterbier has 125
+        //              Lakkalikööri has 57
+        //Condiments
+        //              Aniseed Syrup has 13
+        //              Chef Anton's Cajun Seasoning has 53
+        //              Chef Anton's Gumbo Mix has 0
+        //              Grandma's Boysenberry Spread has 120
+        //              Northwoods Cranberry Sauce has 6
+        //              Genen Shouyu has 39
+        //              Gula Malacca has 27
+        //              Sirop d'érable has 113
+        //              Vegie - spread has 24
+        //              Louisiana Fiery Hot Pepper Sauce has 76
+        //              Louisiana Hot Spiced Okra has 4
+        //              Original Frankfurter grüne Soße has 32
+
+
+        #endregion
+
     }
+}

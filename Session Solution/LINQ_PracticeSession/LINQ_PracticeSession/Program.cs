@@ -1,12 +1,19 @@
 ﻿using System;
 using System.Collections;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Globalization;
+using System.Linq;
 using System.Numerics;
 using System.Runtime.InteropServices;
 using System.Security.Cryptography;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
+using System.Text.RegularExpressions;
+using System.Threading;
 using System.Xml.Linq;
 using static LINQ_PracticeSession.ListGenerator;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 //we used the word static ?
 
 namespace LINQ_PracticeSession;
@@ -523,8 +530,6 @@ class Program
         //var Result = from P in ProductList
         //             group P by P.Category;
 
-
-
         //Console.WriteLine(Result);
 
         //foreach (var Category in Result)
@@ -560,6 +565,92 @@ class Program
         //              Louisiana Hot Spiced Okra has 4
         //              Original Frankfurter grüne Soße has 32
 
+
+        //10. Get the total numbers in an array
+        //int[] arr = { 5, 4, 1, 3, 9, 8, 6, 7 , 2, 0 };
+        //var Result = arr.Sum(P => P);
+
+        //11. Get the total number of charachters of all words in dictionary_english.txt
+        //int Result = WordsList.Sum(W => W.Length);
+
+        //12. Get the length of the shortest word in dictionary_english.txt
+        //var Result = WordsList.Min(W => W.Length);
+
+        //13. Get the length of the longest word in dictionary_english.txt
+        //var Result = WordsList.Max(W => W.Length);
+
+        //14. Get the average length of words in dictionary_english.txt
+        //var Result = WordsList.Average(W => W.Length);
+
+
+        //15. Sort the list of products by name
+        //var Result = ProductList.OrderBy(P => P.ProductName);
+
+
+        //16. Uses a custom comparer to do a case-insensitive sort of the words in an array
+        //String[] Arr = { "aPPLE", "AbAcUs", "bRaNcH", "BlUeBeRrY", "ClOvEr", "cHeRry" };
+
+        //var Result = Arr.OrderBy(W => W, new StringCompare());
+
+
+        //17. Sort a list of products, first by category, and then by unit price, from highest to lowest
+        //Desc
+
+        //var Result = ProductList.OrderBy(P => P.Category)
+        //                        .ThenByDescending(P => P.UnitPrice);    
+
+        //18. Sort a list of digits, first by length of their name, and then alphabetically by the name itself.
+        //string[] Arr = {"zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"};
+        //var Result = Arr.OrderBy(P => P.Length)
+        //                .ThenBy(P => P);
+
+
+        //5.Sort first by-word length and then by a case -insensitive sort of the words in an array.
+        //String[] Arr = { "aPPLE", "AbAcUs", "bRaNcH", "BlUeBeRrY", "ClOvEr", "cHeRry" };
+
+        //var Result = Arr.OrderBy(P => P.Length).ThenBy(P => P, new StringCompare());
+
+        //1.Return a sequence of just the names of a list of products.
+        //var Result = ProductList.Select(P => P.ProductName);
+
+
+        //2.Produce a sequence of the uppercase and lowercase versions of each word in the original array(Anonymous Types).
+        //String[] words = { "aPPLE", "BlUeBeRrY", "cHeRry"};
+        //var Result = words.Select(word => new
+        //{
+        //    UpperCase = word.ToUpper(),
+        //    LowerCase = word.ToLower()
+
+        //});
+
+        //3.Produce a sequence containing some properties of Products, including UnitPrice which is renamed to Price in the resulting type.
+        //var Result = ProductList.Select(Product => new
+        //{   Price = Product.UnitPrice,
+        //    Product.ProductName,
+        //    Product.Category
+        //});
+
+        //4.Determine if the value of int in an array matches their position in the array.
+        //int[] Arr = { 5, 4, 1, 3, 9, 8, 6, 7, 2, 0 };
+
+        //var Result = Arr.Select((Digit, index) => new
+        //{
+        //    Digit,
+        //    Value = (Digit == index)
+        //});
+
+        //Returns all pairs of numbers from both arrays such that the number from numbersA is less than the number from numbersB.
+        int[] numbersA = { 0, 2, 4, 5, 6, 8, 9 };
+        int[] numbersB = { 1, 3, 5, 7, 8 };
+
+        var Result = numbersA.SelectMany(n => numbersB, (a, b) => new { a, b })
+                             .Where(pair => pair.a < pair.b);
+
+
+        foreach (var Product in Result)
+            Console.WriteLine(Product);
+
+        //Console.WriteLine(Result);
 
         #endregion
 

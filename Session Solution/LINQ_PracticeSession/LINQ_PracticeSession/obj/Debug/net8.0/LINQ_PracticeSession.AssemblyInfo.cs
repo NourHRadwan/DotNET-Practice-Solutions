@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LINQ_PracticeSession")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3c9bd18eb24da3845b45c99300041bfac8a19a82")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e05f13bca35e3001f64c8d9e49ad258332d54067")]
 [assembly: System.Reflection.AssemblyProductAttribute("LINQ_PracticeSession")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LINQ_PracticeSession")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

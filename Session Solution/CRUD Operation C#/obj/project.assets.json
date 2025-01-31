@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/NourH/Documents/ASP.netDiploma/GitHub Repo/DotNET-Practice-Solutions/Session Solution/C# Basics/Basics/Day 02.csproj",
-      "projectName": "Day 02",
-      "projectPath": "/Users/NourH/Documents/ASP.netDiploma/GitHub Repo/DotNET-Practice-Solutions/Session Solution/C# Basics/Basics/Day 02.csproj",
+      "projectUniqueName": "/Users/NourH/Documents/ASP.netDiploma/GitHub Repo/DotNET-Practice-Solutions/Session Solution/CRUD Operation C#/CRUD Operation C#.csproj",
+      "projectName": "CRUD Operation C#",
+      "projectPath": "/Users/NourH/Documents/ASP.netDiploma/GitHub Repo/DotNET-Practice-Solutions/Session Solution/CRUD Operation C#/CRUD Operation C#.csproj",
       "packagesPath": "/Users/NourH/.nuget/packages/",
-      "outputPath": "/Users/NourH/Documents/ASP.netDiploma/GitHub Repo/DotNET-Practice-Solutions/Session Solution/C# Basics/Basics/obj/",
+      "outputPath": "/Users/NourH/Documents/ASP.netDiploma/GitHub Repo/DotNET-Practice-Solutions/Session Solution/CRUD Operation C#/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/NourH/.nuget/NuGet/NuGet.Config"

@@ -1,0 +1,15 @@
+/Users/NourH/Documents/ASP.netDiploma/GitHub Repo/DotNET-Practice-Solutions/Session Solution/C# Basics/Basics/FreeCodeCamp Revision Session/bin/Debug/net8.0/FreeCodeCamp Revision Session
+/Users/NourH/Documents/ASP.netDiploma/GitHub Repo/DotNET-Practice-Solutions/Session Solution/C# Basics/Basics/FreeCodeCamp Revision Session/bin/Debug/net8.0/FreeCodeCamp Revision Session.deps.json
+/Users/NourH/Documents/ASP.netDiploma/GitHub Repo/DotNET-Practice-Solutions/Session Solution/C# Basics/Basics/FreeCodeCamp Revision Session/bin/Debug/net8.0/FreeCodeCamp Revision Session.runtimeconfig.json
+/Users/NourH/Documents/ASP.netDiploma/GitHub Repo/DotNET-Practice-Solutions/Session Solution/C# Basics/Basics/FreeCodeCamp Revision Session/bin/Debug/net8.0/FreeCodeCamp Revision Session.dll
+/Users/NourH/Documents/ASP.netDiploma/GitHub Repo/DotNET-Practice-Solutions/Session Solution/C# Basics/Basics/FreeCodeCamp Revision Session/bin/Debug/net8.0/FreeCodeCamp Revision Session.pdb
+/Users/NourH/Documents/ASP.netDiploma/GitHub Repo/DotNET-Practice-Solutions/Session Solution/C# Basics/Basics/FreeCodeCamp Revision Session/obj/Debug/net8.0/FreeCodeCamp Revision Session.GeneratedMSBuildEditorConfig.editorconfig
+/Users/NourH/Documents/ASP.netDiploma/GitHub Repo/DotNET-Practice-Solutions/Session Solution/C# Basics/Basics/FreeCodeCamp Revision Session/obj/Debug/net8.0/FreeCodeCamp Revision Session.AssemblyInfoInputs.cache
+/Users/NourH/Documents/ASP.netDiploma/GitHub Repo/DotNET-Practice-Solutions/Session Solution/C# Basics/Basics/FreeCodeCamp Revision Session/obj/Debug/net8.0/FreeCodeCamp Revision Session.AssemblyInfo.cs
+/Users/NourH/Documents/ASP.netDiploma/GitHub Repo/DotNET-Practice-Solutions/Session Solution/C# Basics/Basics/FreeCodeCamp Revision Session/obj/Debug/net8.0/FreeCodeCamp Revision Session.csproj.CoreCompileInputs.cache
+/Users/NourH/Documents/ASP.netDiploma/GitHub Repo/DotNET-Practice-Solutions/Session Solution/C# Basics/Basics/FreeCodeCamp Revision Session/obj/Debug/net8.0/FreeCodeCamp Revision Session.sourcelink.json
+/Users/NourH/Documents/ASP.netDiploma/GitHub Repo/DotNET-Practice-Solutions/Session Solution/C# Basics/Basics/FreeCodeCamp Revision Session/obj/Debug/net8.0/FreeCodeCamp Revision Session.dll
+/Users/NourH/Documents/ASP.netDiploma/GitHub Repo/DotNET-Practice-Solutions/Session Solution/C# Basics/Basics/FreeCodeCamp Revision Session/obj/Debug/net8.0/refint/FreeCodeCamp Revision Session.dll
+/Users/NourH/Documents/ASP.netDiploma/GitHub Repo/DotNET-Practice-Solutions/Session Solution/C# Basics/Basics/FreeCodeCamp Revision Session/obj/Debug/net8.0/FreeCodeCamp Revision Session.pdb
+/Users/NourH/Documents/ASP.netDiploma/GitHub Repo/DotNET-Practice-Solutions/Session Solution/C# Basics/Basics/FreeCodeCamp Revision Session/obj/Debug/net8.0/FreeCodeCamp Revision Session.genruntimeconfig.cache
+/Users/NourH/Documents/ASP.netDiploma/GitHub Repo/DotNET-Practice-Solutions/Session Solution/C# Basics/Basics/FreeCodeCamp Revision Session/obj/Debug/net8.0/ref/FreeCodeCamp Revision Session.dll

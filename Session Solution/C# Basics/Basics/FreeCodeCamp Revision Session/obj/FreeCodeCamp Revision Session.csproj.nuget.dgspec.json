@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/NourH/Documents/ASP.netDiploma/GitHub Repo/DotNET-Practice-Solutions/Session Solution/C# Basics/Basics/Day 02.csproj": {}
+    "/Users/NourH/Documents/ASP.netDiploma/GitHub Repo/DotNET-Practice-Solutions/Session Solution/C# Basics/Basics/FreeCodeCamp Revision Session/FreeCodeCamp Revision Session.csproj": {}
   },
   "projects": {
-    "/Users/NourH/Documents/ASP.netDiploma/GitHub Repo/DotNET-Practice-Solutions/Session Solution/C# Basics/Basics/Day 02.csproj": {
+    "/Users/NourH/Documents/ASP.netDiploma/GitHub Repo/DotNET-Practice-Solutions/Session Solution/C# Basics/Basics/FreeCodeCamp Revision Session/FreeCodeCamp Revision Session.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/NourH/Documents/ASP.netDiploma/GitHub Repo/DotNET-Practice-Solutions/Session Solution/C# Basics/Basics/Day 02.csproj",
-        "projectName": "Day 02",
-        "projectPath": "/Users/NourH/Documents/ASP.netDiploma/GitHub Repo/DotNET-Practice-Solutions/Session Solution/C# Basics/Basics/Day 02.csproj",
+        "projectUniqueName": "/Users/NourH/Documents/ASP.netDiploma/GitHub Repo/DotNET-Practice-Solutions/Session Solution/C# Basics/Basics/FreeCodeCamp Revision Session/FreeCodeCamp Revision Session.csproj",
+        "projectName": "FreeCodeCamp Revision Session",
+        "projectPath": "/Users/NourH/Documents/ASP.netDiploma/GitHub Repo/DotNET-Practice-Solutions/Session Solution/C# Basics/Basics/FreeCodeCamp Revision Session/FreeCodeCamp Revision Session.csproj",
         "packagesPath": "/Users/NourH/.nuget/packages/",
-        "outputPath": "/Users/NourH/Documents/ASP.netDiploma/GitHub Repo/DotNET-Practice-Solutions/Session Solution/C# Basics/Basics/obj/",
+        "outputPath": "/Users/NourH/Documents/ASP.netDiploma/GitHub Repo/DotNET-Practice-Solutions/Session Solution/C# Basics/Basics/FreeCodeCamp Revision Session/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/NourH/.nuget/NuGet/NuGet.Config"

@@ -1,0 +1,30 @@
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day 02", "Day 02.csproj", "{747ECD00-AC4E-EC80-D399-2168AFEED8C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreeCodeCamp Revision Session", "FreeCodeCamp Revision Session\FreeCodeCamp Revision Session.csproj", "{AFFB1252-DB85-4E28-A6FE-A4E017AF34CE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{747ECD00-AC4E-EC80-D399-2168AFEED8C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{747ECD00-AC4E-EC80-D399-2168AFEED8C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{747ECD00-AC4E-EC80-D399-2168AFEED8C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{747ECD00-AC4E-EC80-D399-2168AFEED8C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFFB1252-DB85-4E28-A6FE-A4E017AF34CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFFB1252-DB85-4E28-A6FE-A4E017AF34CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFFB1252-DB85-4E28-A6FE-A4E017AF34CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFFB1252-DB85-4E28-A6FE-A4E017AF34CE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CF05C19D-E8FD-4344-8DC2-D9B04BE913D2}
+	EndGlobalSection
+EndGlobal

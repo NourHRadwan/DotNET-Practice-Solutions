@@ -1,0 +1,15 @@
+/Users/NourH/Documents/ASP.netDiploma/GitHub Repo/DotNET-Practice-Solutions/Session Solution/Entity Framework/Entity Framework/bin/Debug/net8.0/Entity Framework
+/Users/NourH/Documents/ASP.netDiploma/GitHub Repo/DotNET-Practice-Solutions/Session Solution/Entity Framework/Entity Framework/bin/Debug/net8.0/Entity Framework.deps.json
+/Users/NourH/Documents/ASP.netDiploma/GitHub Repo/DotNET-Practice-Solutions/Session Solution/Entity Framework/Entity Framework/bin/Debug/net8.0/Entity Framework.runtimeconfig.json
+/Users/NourH/Documents/ASP.netDiploma/GitHub Repo/DotNET-Practice-Solutions/Session Solution/Entity Framework/Entity Framework/bin/Debug/net8.0/Entity Framework.dll
+/Users/NourH/Documents/ASP.netDiploma/GitHub Repo/DotNET-Practice-Solutions/Session Solution/Entity Framework/Entity Framework/bin/Debug/net8.0/Entity Framework.pdb
+/Users/NourH/Documents/ASP.netDiploma/GitHub Repo/DotNET-Practice-Solutions/Session Solution/Entity Framework/Entity Framework/obj/Debug/net8.0/Entity Framework.GeneratedMSBuildEditorConfig.editorconfig
+/Users/NourH/Documents/ASP.netDiploma/GitHub Repo/DotNET-Practice-Solutions/Session Solution/Entity Framework/Entity Framework/obj/Debug/net8.0/Entity Framework.AssemblyInfoInputs.cache
+/Users/NourH/Documents/ASP.netDiploma/GitHub Repo/DotNET-Practice-Solutions/Session Solution/Entity Framework/Entity Framework/obj/Debug/net8.0/Entity Framework.AssemblyInfo.cs
+/Users/NourH/Documents/ASP.netDiploma/GitHub Repo/DotNET-Practice-Solutions/Session Solution/Entity Framework/Entity Framework/obj/Debug/net8.0/Entity Framework.csproj.CoreCompileInputs.cache
+/Users/NourH/Documents/ASP.netDiploma/GitHub Repo/DotNET-Practice-Solutions/Session Solution/Entity Framework/Entity Framework/obj/Debug/net8.0/Entity Framework.sourcelink.json
+/Users/NourH/Documents/ASP.netDiploma/GitHub Repo/DotNET-Practice-Solutions/Session Solution/Entity Framework/Entity Framework/obj/Debug/net8.0/Entity Framework.dll
+/Users/NourH/Documents/ASP.netDiploma/GitHub Repo/DotNET-Practice-Solutions/Session Solution/Entity Framework/Entity Framework/obj/Debug/net8.0/refint/Entity Framework.dll
+/Users/NourH/Documents/ASP.netDiploma/GitHub Repo/DotNET-Practice-Solutions/Session Solution/Entity Framework/Entity Framework/obj/Debug/net8.0/Entity Framework.pdb
+/Users/NourH/Documents/ASP.netDiploma/GitHub Repo/DotNET-Practice-Solutions/Session Solution/Entity Framework/Entity Framework/obj/Debug/net8.0/Entity Framework.genruntimeconfig.cache
+/Users/NourH/Documents/ASP.netDiploma/GitHub Repo/DotNET-Practice-Solutions/Session Solution/Entity Framework/Entity Framework/obj/Debug/net8.0/ref/Entity Framework.dll

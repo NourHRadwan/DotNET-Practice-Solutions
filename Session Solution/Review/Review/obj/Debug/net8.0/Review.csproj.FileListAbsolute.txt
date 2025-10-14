@@ -1,0 +1,15 @@
+/Users/NourH/Documents/ASP.netDiploma/GitHub Repo/DotNET-Practice-Solutions/Session Solution/Review/Review/bin/Debug/net8.0/Review
+/Users/NourH/Documents/ASP.netDiploma/GitHub Repo/DotNET-Practice-Solutions/Session Solution/Review/Review/bin/Debug/net8.0/Review.deps.json
+/Users/NourH/Documents/ASP.netDiploma/GitHub Repo/DotNET-Practice-Solutions/Session Solution/Review/Review/bin/Debug/net8.0/Review.runtimeconfig.json
+/Users/NourH/Documents/ASP.netDiploma/GitHub Repo/DotNET-Practice-Solutions/Session Solution/Review/Review/bin/Debug/net8.0/Review.dll
+/Users/NourH/Documents/ASP.netDiploma/GitHub Repo/DotNET-Practice-Solutions/Session Solution/Review/Review/bin/Debug/net8.0/Review.pdb
+/Users/NourH/Documents/ASP.netDiploma/GitHub Repo/DotNET-Practice-Solutions/Session Solution/Review/Review/obj/Debug/net8.0/Review.GeneratedMSBuildEditorConfig.editorconfig
+/Users/NourH/Documents/ASP.netDiploma/GitHub Repo/DotNET-Practice-Solutions/Session Solution/Review/Review/obj/Debug/net8.0/Review.AssemblyInfoInputs.cache
+/Users/NourH/Documents/ASP.netDiploma/GitHub Repo/DotNET-Practice-Solutions/Session Solution/Review/Review/obj/Debug/net8.0/Review.AssemblyInfo.cs
+/Users/NourH/Documents/ASP.netDiploma/GitHub Repo/DotNET-Practice-Solutions/Session Solution/Review/Review/obj/Debug/net8.0/Review.csproj.CoreCompileInputs.cache
+/Users/NourH/Documents/ASP.netDiploma/GitHub Repo/DotNET-Practice-Solutions/Session Solution/Review/Review/obj/Debug/net8.0/Review.sourcelink.json
+/Users/NourH/Documents/ASP.netDiploma/GitHub Repo/DotNET-Practice-Solutions/Session Solution/Review/Review/obj/Debug/net8.0/Review.dll
+/Users/NourH/Documents/ASP.netDiploma/GitHub Repo/DotNET-Practice-Solutions/Session Solution/Review/Review/obj/Debug/net8.0/refint/Review.dll
+/Users/NourH/Documents/ASP.netDiploma/GitHub Repo/DotNET-Practice-Solutions/Session Solution/Review/Review/obj/Debug/net8.0/Review.pdb
+/Users/NourH/Documents/ASP.netDiploma/GitHub Repo/DotNET-Practice-Solutions/Session Solution/Review/Review/obj/Debug/net8.0/Review.genruntimeconfig.cache
+/Users/NourH/Documents/ASP.netDiploma/GitHub Repo/DotNET-Practice-Solutions/Session Solution/Review/Review/obj/Debug/net8.0/ref/Review.dll

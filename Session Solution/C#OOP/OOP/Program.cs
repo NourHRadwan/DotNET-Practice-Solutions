@@ -50,18 +50,62 @@ class Program
 
         Student std02 = new Student();
         System.Console.WriteLine("Please Enter Student Data: ");
+        // Id
+        
 
+        bool IsParsed = false;
+        int stdId;
+        do
+        {
+            System.Console.Write("Id: "); 
+            
+            IsParsed = int.TryParse(Console.ReadLine(), out stdId);
+        } while (!IsParsed);
+        std02.Id = stdId;
+
+        // Name
+        Console.Write("Name: ");
+        std02.Name = Console.ReadLine();
+
+        // Gender
+        Gender StdGender;
+
+        do
+        {
+            Console.Write("Gender: ");
+            IsParsed = Enum.TryParse<Gender>(Console.ReadLine(), out StdGender);
+        } while (!IsParsed);
+        std02.Gender = StdGender;
+
+        // Grade
+        Grades StdGrade;
         
         do
         {
-            System.Console.Write("Id: ");
-            int.TryParse(Console.ReadLine(), out int id);
+            Console.Write("Grades: ");
+            IsParsed = Enum.TryParse<Grades>(Console.ReadLine(), out StdGrade);
+        }while(!IsParsed);
+        std02.Grade = StdGrade;
 
-        }
+        // Branch
+        Branches StdBranch;
+      
+        do
+        {
+            Console.Write("Branch: ");
+            IsParsed = Enum.TryParse<Branches>(Console.ReadLine(), out StdBranch);
+        } while (!IsParsed);
+        std02.Branch = StdBranch;
 
-        #endregion    
-         
+        Console.Clear();
+
+        System.Console.WriteLine("Hell {std02.Name}: ");
+        System.Console.WriteLine($"Your Id is: {std02.Id} and\nYour Gender is: {std02.Gender},\nYour Grade is {std02.Grade}");
+        System.Console.WriteLine($"Branch: {std02.Branch}");
+
         #endregion
 
-    }
+        #endregion
 }
+}
+

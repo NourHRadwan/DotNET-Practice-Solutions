@@ -2,13 +2,7 @@
 
 namespace Day_02
 {
-    ///static void PrintShapes()
-///{
-///    for (int i = 1; i <= 10; i++)
-///    {
-///        Console.WriteLine($"*_*");
-///    }
-///}
+ 
 
 static void PrintShapes(int count = 5, string Pattern = "$_$")
     // Default values for the parameters
@@ -36,7 +30,9 @@ static void PrintShapes(int count = 5, string Pattern = "$_$")
             ///2. Initalize allocated Bytes with Default Values of Its DataType
             ///3. Call User-Defined Constructor [If Exists]
             ///4. Assign the Allocated Object to the Reference 'P1'
-            ///
+            #endregion
+
+
             #region Object Size in C#
             /*
              When creating new object in C#, the Size of the object is determined by two factors:
@@ -63,9 +59,6 @@ static void PrintShapes(int count = 5, string Pattern = "$_$")
 
             //Console.WriteLine(P1.x); // 5
             //Console.WriteLine(P1.y); // 5
-
-
-            #endregion
 
             #region Fraction Numbers and Discard
 
@@ -129,6 +122,12 @@ static void PrintShapes(int count = 5, string Pattern = "$_$")
             //Console.WriteLine($"your Name is {name}" +
             //    $"\n your Age is {Age} " +
             //    $"\n your Salary is {Salary}");
+
+           
+
+
+
+
             #endregion
 
             #region Parse
@@ -206,8 +205,8 @@ static void PrintShapes(int count = 5, string Pattern = "$_$")
             ///Console.WriteLine(e);
             ///
             #endregion
+            
 
-            #region Conditional Statments (if,switch)
 
             #region Ex: 1 Numric Values
             //Console.WriteLine("Enter a month number existed at First Quarter: ");
@@ -311,7 +310,6 @@ static void PrintShapes(int count = 5, string Pattern = "$_$")
             #endregion
 
 
-            #endregion
 
             #region Ovulation of Switch in C#
 
@@ -617,15 +615,6 @@ static void PrintShapes(int count = 5, string Pattern = "$_$")
             /// initialize the allocated Bytes with the default value of int datatype 0
 
             //Basic Methods
-
-        Console.WriteLine("Hi")
-
-
-
-
-
-
-
 
             #endregion
 

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/NourH/Documents/ASP.netDiploma/GitHub Repo/DotNET-Practice-Solutions/Session Solution/C# OOP/C# OOP.csproj": {}
+    "/Users/NourH/Documents/ASP.netDiploma/GitHub Repo/DotNET-Practice-Solutions/Session Solution/C# OOP/MyClassLibrary/MyClassLibrary/MyClassLibrary.csproj": {}
   },
   "projects": {
-    "/Users/NourH/Documents/ASP.netDiploma/GitHub Repo/DotNET-Practice-Solutions/Session Solution/C# OOP/C# OOP.csproj": {
+    "/Users/NourH/Documents/ASP.netDiploma/GitHub Repo/DotNET-Practice-Solutions/Session Solution/C# OOP/MyClassLibrary/MyClassLibrary/MyClassLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/NourH/Documents/ASP.netDiploma/GitHub Repo/DotNET-Practice-Solutions/Session Solution/C# OOP/C# OOP.csproj",
-        "projectName": "C# OOP",
-        "projectPath": "/Users/NourH/Documents/ASP.netDiploma/GitHub Repo/DotNET-Practice-Solutions/Session Solution/C# OOP/C# OOP.csproj",
+        "projectUniqueName": "/Users/NourH/Documents/ASP.netDiploma/GitHub Repo/DotNET-Practice-Solutions/Session Solution/C# OOP/MyClassLibrary/MyClassLibrary/MyClassLibrary.csproj",
+        "projectName": "MyClassLibrary",
+        "projectPath": "/Users/NourH/Documents/ASP.netDiploma/GitHub Repo/DotNET-Practice-Solutions/Session Solution/C# OOP/MyClassLibrary/MyClassLibrary/MyClassLibrary.csproj",
         "packagesPath": "/Users/NourH/.nuget/packages/",
-        "outputPath": "/Users/NourH/Documents/ASP.netDiploma/GitHub Repo/DotNET-Practice-Solutions/Session Solution/C# OOP/obj/",
+        "outputPath": "/Users/NourH/Documents/ASP.netDiploma/GitHub Repo/DotNET-Practice-Solutions/Session Solution/C# OOP/MyClassLibrary/MyClassLibrary/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/NourH/.nuget/NuGet/NuGet.Config"
@@ -42,20 +42,6 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "dependencies": {
-            "Microsoft.Data.SqlClient": {
-              "target": "Package",
-              "version": "[5.2.2, )"
-            },
-            "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[9.0.0, )"
-            },
-            "System.Data.SqlClient": {
-              "target": "Package",
-              "version": "[4.9.0, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",

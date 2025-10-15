@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6bf7c717-d423-4404-b12b-337f77ef4068" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../Entity Framework/.vscode/settings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Entity Framework/Entity Framework/Data/Models/Employee.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Entity Framework/Entity Framework/Program.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Entity Framework/Entity Framework/bin/Debug/net8.0/Entity Framework" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Entity Framework/Entity Framework/bin/Debug/net8.0/Entity Framework.deps.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Entity Framework/Entity Framework/bin/Debug/net8.0/Entity Framework.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Entity Framework/Entity Framework/bin/Debug/net8.0/Entity Framework.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Entity Framework/Entity Framework/bin/Debug/net8.0/Entity Framework.runtimeconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Entity Framework/Entity Framework/obj/Debug/net8.0/Entity Framework.AssemblyInfoInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Entity Framework/Entity Framework/obj/Debug/net8.0/Entity Framework.assets.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Entity Framework/Entity Framework/obj/Debug/net8.0/Entity Framework.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Entity Framework/Entity Framework/obj/Debug/net8.0/Entity Framework.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Entity Framework/Entity Framework/obj/Debug/net8.0/Entity Framework.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Entity Framework/Entity Framework/obj/Debug/net8.0/Entity Framework.genruntimeconfig.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Entity Framework/Entity Framework/obj/Debug/net8.0/Entity Framework.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Entity Framework/Entity Framework/obj/Debug/net8.0/Entity Framework.sourcelink.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Entity Framework/Entity Framework/obj/Debug/net8.0/apphost" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Entity Framework/Entity Framework/obj/Debug/net8.0/ref/Entity Framework.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Entity Framework/Entity Framework/obj/Debug/net8.0/refint/Entity Framework.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Entity Framework/Entity Framework/obj/Entity Framework.csproj.nuget.dgspec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Entity Framework/Entity Framework/obj/project.assets.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Entity Framework/Entity Framework/obj/project.nuget.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Review/Review/Program.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Review/Review/bin/Debug/net8.0/Review" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Review/Review/bin/Debug/net8.0/Review.deps.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Review/Review/bin/Debug/net8.0/Review.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Review/Review/bin/Debug/net8.0/Review.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Review/Review/bin/Debug/net8.0/Review.runtimeconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Review/Review/obj/Debug/net8.0/Review.AssemblyInfoInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Review/Review/obj/Debug/net8.0/Review.assets.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Review/Review/obj/Debug/net8.0/Review.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Review/Review/obj/Debug/net8.0/Review.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Review/Review/obj/Debug/net8.0/Review.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Review/Review/obj/Debug/net8.0/Review.genruntimeconfig.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Review/Review/obj/Debug/net8.0/Review.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Review/Review/obj/Debug/net8.0/Review.sourcelink.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Review/Review/obj/Debug/net8.0/apphost" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Review/Review/obj/Debug/net8.0/ref/Review.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Review/Review/obj/Debug/net8.0/refint/Review.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/Day 02.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/Day 02.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/Day 02.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/Day 02.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/Day 02.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/Day 02.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/Day 02.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/Day 02.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C# OOP/C# OOP.sln" beforeDir="false" afterPath="$PROJECT_DIR$/../../C# OOP/C# OOP.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C# OOP/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../C# OOP/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C# OOP/obj/Debug/net8.0/C# OOP.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../C# OOP/obj/Debug/net8.0/C# OOP.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C# OOP/obj/Debug/net8.0/C# OOP.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../C# OOP/obj/Debug/net8.0/C# OOP.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C#Advanced/Assignment2/obj/Debug/net8.0/Assignment2.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../C#Advanced/Assignment2/obj/Debug/net8.0/Assignment2.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C#Advanced/Assignment2/obj/Debug/net8.0/Assignment2.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../C#Advanced/Assignment2/obj/Debug/net8.0/Assignment2.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CRUD Operation C#/CRUD Operation C#.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../../Entity Framework/Entity Framework/Entity Framework.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CRUD Operation C#/Program.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CRUD Operation C#/obj/CRUD Operation C#.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../Review/Review/obj/Review.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CRUD Operation C#/obj/CRUD Operation C#.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/../../Entity Framework/Entity Framework/obj/Entity Framework.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CRUD Operation C#/obj/CRUD Operation C#.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/../../Entity Framework/Entity Framework/obj/Entity Framework.csproj.nuget.g.targets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CRUD Operation C#/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../Review/Review/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CRUD Operation C#/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../Review/Review/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../EntityFramework/.vs/EntityFramework/CopilotIndices/17.12.31.40377/CodeChunks.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../EntityFramework/.vs/EntityFramework/CopilotIndices/17.12.31.40377/CodeChunks.db-shm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../EntityFramework/.vs/EntityFramework/CopilotIndices/17.12.31.40377/CodeChunks.db-wal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../EntityFramework/.vs/EntityFramework/CopilotIndices/17.12.31.40377/SemanticSymbols.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../EntityFramework/.vs/EntityFramework/CopilotIndices/17.12.31.40377/SemanticSymbols.db-shm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../EntityFramework/.vs/EntityFramework/CopilotIndices/17.12.31.40377/SemanticSymbols.db-wal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../EntityFramework/.vs/EntityFramework/DesignTimeBuild/.dtbcache.v2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../EntityFramework/.vs/EntityFramework/copilot-chat/389ed7d1/sessions/64a8cafd-4a25-4343-8d4b-275589501720" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../EntityFramework/.vs/EntityFramework/v17/.futdcache.v2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../EntityFramework/.vs/EntityFramework/v17/.suo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../EntityFramework/.vs/EntityFramework/v17/.wsuo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../EntityFramework/.vs/EntityFramework/v17/DocumentLayout.backup.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../EntityFramework/.vs/EntityFramework/v17/DocumentLayout.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../EntityFramework/.vs/ProjectEvaluation/entityframework.metadata.v9.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../EntityFramework/.vs/ProjectEvaluation/entityframework.projects.v9.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../EntityFramework/.vs/ProjectEvaluation/entityframework.strings.v9.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../EntityFramework/.vs/ProjectSettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../EntityFramework/.vs/slnx.sqlite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../EntityFramework/EntityFramework.sln" beforeDir="false" afterPath="$PROJECT_DIR$/../../Entity Framework/Entity Framework.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../EntityFramework/EntityFramework/Contexts/EnterpriseGr03DbContext.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../EntityFramework/EntityFramework/Entities/Employee.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../EntityFramework/EntityFramework/EntityFramework.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../../Review/Review/Review.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../EntityFramework/EntityFramework/Program.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../EntityFramework/EntityFramework/obj/Debug/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Entity Framework/Entity Framework/obj/Debug/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../EntityFramework/EntityFramework/obj/Debug/net8.0/EntityFramework.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Entity Framework/Entity Framework/obj/Debug/net8.0/Entity Framework.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../EntityFramework/EntityFramework/obj/Debug/net8.0/EntityFramework.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../EntityFramework/EntityFramework/obj/Debug/net8.0/EntityFramework.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/../../Entity Framework/Entity Framework/obj/Debug/net8.0/Entity Framework.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../EntityFramework/EntityFramework/obj/Debug/net8.0/EntityFramework.GlobalUsings.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Entity Framework/Entity Framework/obj/Debug/net8.0/Entity Framework.GlobalUsings.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../EntityFramework/EntityFramework/obj/Debug/net8.0/EntityFramework.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../EntityFramework/EntityFramework/obj/Debug/net8.0/EntityFramework.csproj.AssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../EntityFramework/EntityFramework/obj/EntityFramework.csproj.nuget.dgspec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../EntityFramework/EntityFramework/obj/EntityFramework.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/../../Review/Review/obj/Review.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../EntityFramework/EntityFramework/obj/EntityFramework.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/../../Review/Review/obj/Review.csproj.nuget.g.targets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../EntityFramework/EntityFramework/obj/Release/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Review/Review/obj/Debug/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../EntityFramework/EntityFramework/obj/Release/net8.0/EntityFramework.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Review/Review/obj/Debug/net8.0/Review.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../EntityFramework/EntityFramework/obj/Release/net8.0/EntityFramework.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../EntityFramework/EntityFramework/obj/Release/net8.0/EntityFramework.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/../../Review/Review/obj/Debug/net8.0/Review.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../EntityFramework/EntityFramework/obj/Release/net8.0/EntityFramework.GlobalUsings.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Review/Review/obj/Debug/net8.0/Review.GlobalUsings.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../EntityFramework/EntityFramework/obj/Release/net8.0/EntityFramework.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../EntityFramework/EntityFramework/obj/Release/net8.0/EntityFramework.csproj.AssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../EntityFramework/EntityFramework/obj/project.assets.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../EntityFramework/EntityFramework/obj/project.nuget.cache" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 5
+}]]></component>
+  <component name="ProjectId" id="343hbLNIrgpxgjxS4kjy1qAxEod" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6bf7c717-d423-4404-b12b-337f77ef4068" name="Changes" comment="" />
+      <created>1760448234255</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1760448234255</updated>
+      <workItem from="1760448237473" duration="8000" />
+    </task>
+    <servers />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+</project>
